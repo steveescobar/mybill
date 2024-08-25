@@ -17,10 +17,10 @@ const View68 = () => {
     const pageName = "VIEW 68";
 
     const [data, setData] = useState({
-        amount: "518.31 USDT",
+        amount: "518.31 USDC",
         address: "TjHbjW6WhcAwFJnmQHV4g2XVF",
         address2: "7kNAKTEQS",
-        network: "TRC20",
+        network: "ERC20",
         remarks: "Platform Salary",
         time: "2023-8-26 15:30:35"
     });
