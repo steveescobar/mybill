@@ -53,7 +53,7 @@ const Profile = ({ authUser }) => {
                     </div>
                 </div>
                 <ul>
-                    <Link href="/dashboard/views/view1">
+                    <Link href="/dashboard/views/view1?pageName=1">
                         <li>
                             <div>Receipts</div>
                             <div><i className="fa fa-angle-right"></i></div>

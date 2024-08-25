@@ -20,7 +20,7 @@ const Welcome = () => {
                                 <h3>Withdrawal Receipt</h3>
                                 <p>Easy way to generate withdrawal receipt</p>
                                 <div className="welcome-info-wrapper-alt">
-                                    <Link href="/dashboard/views/view1">
+                                    <Link href="/dashboard/views/view1?pageName=1">
                                         <button>Get Started <i className="fa fa-arrow-right"></i></button>
                                     </Link>
                                 </div>

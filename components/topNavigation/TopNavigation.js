@@ -32,7 +32,7 @@ const TopNavigation = ({ user }) => {
                                     <Link href="/dashboard">
                                         <li>Home</li>
                                     </Link>
-                                    <Link href="/dashboard/views/view1">
+                                    <Link href="/dashboard/views/view1?pageName=1">
                                         <li>Receipt</li>
                                     </Link>
                                     <ListAllPage />
@@ -44,7 +44,7 @@ const TopNavigation = ({ user }) => {
                                     <Link href="/dashboard">
                                         <li>Home</li>
                                     </Link>
-                                    <Link href="/dashboard/views/view1">
+                                    <Link href="/dashboard/views/view1?pageName=1">
                                         <li>Receipt</li>
                                     </Link>
                                     <Link href="/dashboard/allUser">
