@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: "HelveticaWorld", sans-serif;
+    src: url('/public/fonts/HelveticaWorld-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN", sans-serif;
+    src: url('/public/fonts/DIN_Light_Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontRoboto * {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.fontDm * {
+    font-family: "DM Sans", sans-serif !important;
+}
+
+.fontHelveticaworld * {
+    font-family: "HelveticaWorld", sans-serif !important;
+}
+
+.fontDin * {
+    font-family: "DIN", sans-serif !important;
+}
+
+.fontOpenSans * {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.fontInter * {
+    font-family: "Inter", sans-serif !important;
+}
