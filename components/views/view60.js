@@ -12,7 +12,8 @@ import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 
 const View60 = () => {
 
-    // update test
+    // update test2
+    // update test2
 
     const screenshotRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -463,4 +464,4 @@ const View60 = () => {
     )
 }
 
-export default View60
+export default View60;
