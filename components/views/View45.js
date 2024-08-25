@@ -7,7 +7,7 @@ import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from '@/utils/getPicture';
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 import Image from "next/image";
 
 const View45 = () => {
@@ -131,9 +131,9 @@ const View45 = () => {
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 1854 4030"
                             >
-                                <style>
+                                 <style>
                                     {
-                                        RobotoBaseEncoded
+                                        HelveticaBaseEncoded
                                     }
                                 </style>
                                 <defs>

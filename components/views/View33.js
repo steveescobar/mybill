@@ -7,7 +7,7 @@ import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 import Image from "next/image";
 
 const View33 = () => {
@@ -136,7 +136,7 @@ const View33 = () => {
 
                                 <style>
                                     {
-                                        RobotoBaseEncoded
+                                        HelveticaBaseEncoded
                                     }
                                 </style>
                                 <g data-name="Group 189" transform="translate(-2743 -140)">
