@@ -9,6 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View67 = () => {
 
@@ -132,7 +133,7 @@ const View67 = () => {
                             >
                                 <style>
                                     {
-                                      RobotoBaseEncoded
+                                      HelveticaBaseEncoded
                                     }
                                 </style>
                                 <defs>
