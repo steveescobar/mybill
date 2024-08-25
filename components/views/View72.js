@@ -8,7 +8,7 @@ import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View72 = () => {
 
@@ -129,9 +129,9 @@ const View72 = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 1519 3302"
                             >
-                                <style>
+                                 <style>
                                     {
-                                      RobotoBaseEncoded
+                                      HelveticaBaseEncoded
                                     }
                                 </style>
                                 <defs>

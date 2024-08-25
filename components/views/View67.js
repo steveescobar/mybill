@@ -8,7 +8,6 @@ import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View67 = () => {

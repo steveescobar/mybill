@@ -8,7 +8,7 @@ import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View68 = () => {
 
@@ -130,9 +130,9 @@ const View68 = () => {
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 1736 3773"
                             >
-                                <style>
+                                 <style>
                                     {
-                                      RobotoBaseEncoded
+                                      HelveticaBaseEncoded
                                     }
                                 </style>
                                 <defs>
