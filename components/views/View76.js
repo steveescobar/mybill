@@ -60,21 +60,18 @@ const View76 = () => {
             month: 'short',
             day: 'numeric',
         };
-    
+
         const now = new Date();
         const formattedTime = now.toLocaleString('en-US', timeOptions).replace(',', '');
         const formattedDate = now.toLocaleString('en-US', dateOptions).replace(',', '');
-        
+
         const formattedDateTime = `${formattedTime} ${formattedDate}`;
-        
+
         return setData({
             ...data,
             statusTime: formattedDateTime
         });
     };
-    
-
-
 
     const takeScreenshot = async () => {
         await getPicture(
@@ -143,6 +140,11 @@ const View76 = () => {
 
                             }}
                         >
+                            <style>
+                                {
+                                    RobotoBaseEncoded
+                                }
+                            </style>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
