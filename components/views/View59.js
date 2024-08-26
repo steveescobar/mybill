@@ -12,119 +12,119 @@ import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View59 = () => {
 
-  const screenshotRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const pageName = "VIEW 59";
+    const screenshotRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const pageName = "VIEW 59";
 
-  const [data, setData] = useState({
-    amount: "518.31 USDT",
-    address: "TjHbjW6WhcAwFJnmQHV4g2XVF",
-    address2: "7kNAKTEQS",
-    network: "TRC20",
-    remarks: "Platform Salary",
-    time: "2023-8-26 15:30:35"
-});
-  const onChangeHandler = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
-  }
-
-  const [imageDimension, setImageDimension] = useState("50");
-
-  const [time, setTime] = useState("9:34");
-  const [network, setNetwork] = useState(4);
-  const [net, setNet] = useState("wifi");
-  const [isBattery, setIsBattery] = useState(true);
-  const [battery, setBattery] = useState(50);
-  const [bgColor, setBgColor] = useState("#ffffff");
-  const [isOption, setIsOption] = useState(true);
-  const [isIOS, setIsIOS] = useState(true);
-  const [preview, setPreview] = useState("");
-  const [isPreview, setIsPreview] = useState(false);
-
-  const fetchCurrentTime = async () => {
-    const timeValue = await getCurrentTime();
-    setTime(timeValue);
-  }
-
-  const manageTimeDate = () => {
-    const now = new Date();
-    const padL = (nr, len = 2, chr = `0`) => `${nr}`.padStart(2, chr);
-    const finalRes = (`${now.getFullYear()}-${padL(now.getMonth() + 1)}-${padL(now.getDate())} ${padL(now.getHours())}:${padL(now.getMinutes())}:${padL(now.getSeconds())}`
-    );
-    return setData({
-        ...data,
-        time: finalRes
+    const [data, setData] = useState({
+        amount: "518.31 USDT",
+        address: "TjHbjW6WhcAwFJnmQHV4g2XVF",
+        address2: "7kNAKTEQS",
+        network: "TRC20",
+        remarks: "Platform Salary",
+        time: "2023-8-26 15:30:35"
     });
-}
+    const onChangeHandler = (e) => {
+        setData({ ...data, [e.target.name]: e.target.value });
+    }
 
-  const takeScreenshot = async () => {
-    await getPicture(
-        setPreview,
-        setIsPreview,
-        screenshotRef,
-        setIsLoading,
-        toast,
-      0,
-      0,
-      0.5,
-      0
-    );
-  }
+    const [imageDimension, setImageDimension] = useState("50");
 
-  return (
-    <>
-    {isLoading ? <Loader /> : <></>}
-      {
-        isPreview
-          ?
-          <>
-            <div className="show_preview" onClick={() => setIsPreview(false)}>
-              <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
-                <Image
-                  src={preview}
-                  height={100}
-                  width={100}
-                  alt="pre"
-                />
-              </div>
-            </div>
-          </>
-          :
-          <>
-          </>
-      }
-      <div className="bill-inner-view">
-        <div className="bill-inner-view-childs">
-          <IconOptions
-            setImageDimension={setImageDimension}
-            setNetwork={setNetwork}
-            setNet={setNet}
-            setIsBattery={setIsBattery}
-            setBattery={setBattery}
-            setBgColor={setBgColor}
-            setIsOption={setIsOption}
-            setTime={setTime}
-            battery={battery}
-            isOption={isOption}
-            time={time}
-            bgColor={bgColor}
-            imageDimension={imageDimension}
-            fetchCurrentTime={fetchCurrentTime}
-            setIsIOS={setIsIOS}
-            isIOS={isIOS}
-          />
-          <div className="billing-mobile-wrapper" style={{
-            background: `${bgColor}`
-          }}>
-            <div
-              className="artboard"
-              ref={screenshotRef}
-              style={{
-                transform: `scale(${imageDimension / 100})`,
-               
-              }}
-            >
-             <svg
+    const [time, setTime] = useState("9:34");
+    const [network, setNetwork] = useState(4);
+    const [net, setNet] = useState("wifi");
+    const [isBattery, setIsBattery] = useState(true);
+    const [battery, setBattery] = useState(50);
+    const [bgColor, setBgColor] = useState("#ffffff");
+    const [isOption, setIsOption] = useState(true);
+    const [isIOS, setIsIOS] = useState(true);
+    const [preview, setPreview] = useState("");
+    const [isPreview, setIsPreview] = useState(false);
+
+    const fetchCurrentTime = async () => {
+        const timeValue = await getCurrentTime();
+        setTime(timeValue);
+    }
+
+    const manageTimeDate = () => {
+        const now = new Date();
+        const padL = (nr, len = 2, chr = `0`) => `${nr}`.padStart(2, chr);
+        const finalRes = (`${now.getFullYear()}-${padL(now.getMonth() + 1)}-${padL(now.getDate())} ${padL(now.getHours())}:${padL(now.getMinutes())}:${padL(now.getSeconds())}`
+        );
+        return setData({
+            ...data,
+            time: finalRes
+        });
+    }
+
+    const takeScreenshot = async () => {
+        await getPicture(
+            setPreview,
+            setIsPreview,
+            screenshotRef,
+            setIsLoading,
+            toast,
+            0,
+            0,
+            0.5,
+            0
+        );
+    }
+
+    return (
+        <>
+            {isLoading ? <Loader /> : <></>}
+            {
+                isPreview
+                    ?
+                    <>
+                        <div className="show_preview" onClick={() => setIsPreview(false)}>
+                            <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
+                                <Image
+                                    src={preview}
+                                    height={100}
+                                    width={100}
+                                    alt="pre"
+                                />
+                            </div>
+                        </div>
+                    </>
+                    :
+                    <>
+                    </>
+            }
+            <div className="bill-inner-view">
+                <div className="bill-inner-view-childs">
+                    <IconOptions
+                        setImageDimension={setImageDimension}
+                        setNetwork={setNetwork}
+                        setNet={setNet}
+                        setIsBattery={setIsBattery}
+                        setBattery={setBattery}
+                        setBgColor={setBgColor}
+                        setIsOption={setIsOption}
+                        setTime={setTime}
+                        battery={battery}
+                        isOption={isOption}
+                        time={time}
+                        bgColor={bgColor}
+                        imageDimension={imageDimension}
+                        fetchCurrentTime={fetchCurrentTime}
+                        setIsIOS={setIsIOS}
+                        isIOS={isIOS}
+                    />
+                    <div className="billing-mobile-wrapper" style={{
+                        background: `${bgColor}`
+                    }}>
+                        <div
+                            className="artboard"
+                            ref={screenshotRef}
+                            style={{
+                                transform: `scale(${imageDimension / 100})`,
+
+                            }}
+                        >
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 1736 3773"
@@ -339,85 +339,85 @@ const View59 = () => {
                                     ></path>
                                 </g>
                             </svg>
-              <IOSOption
-                battery={battery}
-                isOption={isOption}
-                time={time}
-                network={network}
-                net={net}
-                isBattery={isBattery}
-                iconPadding={`2rem 5rem 0rem 7rem`}
-                isDarkBg={true}
-                isIOS={isIOS}
-              />
-            </div>
-          </div>
-        </div >
-    
-       <div className="bill-inner-view-childs">
-          <h4 className="section-heading">INPUTS - {pageName}</h4>
-          <div className="screenshot-btn">
-            <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
-          </div>
-          <div className="global_form_wrapper">
-                    <div className="global_form_inner">
-                        <label>Amount</label>
-                        <input
-                            type="text"
-                            value={data.amount}
-                            name="amount"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
+                            <IOSOption
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2rem 5rem 0rem 7rem`}
+                                isDarkBg={true}
+                                isIOS={isIOS}
+                            />
+                        </div>
                     </div>
-                    <div className="global_form_inner">
-                        <label>Address/Account</label>
-                        <input
-                            type="text"
-                            value={data.address}
-                            name="address"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                        <input
-                            type="text"
-                            value={data.address2}
-                            name="address2"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
+                </div >
+
+                <div className="bill-inner-view-childs">
+                    <h4 className="section-heading">INPUTS - {pageName}</h4>
+                    <div className="screenshot-btn">
+                        <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
                     </div>
-                    <div className="global_form_inner">
-                        <label>Network</label>
-                        <input
-                            type="text"
-                            value={data.network}
-                            name="network"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
-                    <div className="global_form_inner">
-                        <label>Remarks</label>
-                        <input
-                            type="text"
-                            value={data.remarks}
-                            name="remarks"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
-                    <div className="global_form_inner">
-                        <label>Date</label>
-                        <input
-                            type="text"
-                            value={data.time}
-                            name="time"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                         <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
+                    <div className="global_form_wrapper">
+                        <div className="global_form_inner">
+                            <label>Amount</label>
+                            <input
+                                type="text"
+                                value={data.amount}
+                                name="amount"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Address/Account</label>
+                            <input
+                                type="text"
+                                value={data.address}
+                                name="address"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.address2}
+                                name="address2"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Network</label>
+                            <input
+                                type="text"
+                                value={data.network}
+                                name="network"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Remarks</label>
+                            <input
+                                type="text"
+                                value={data.remarks}
+                                name="remarks"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Date</label>
+                            <input
+                                type="text"
+                                value={data.time}
+                                name="time"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
+                        </div>
                     </div>
                 </div>
-        </div>
-       
-      </div >
-    </>
-  )
+
+            </div >
+        </>
+    )
 }
 
 export default View59
