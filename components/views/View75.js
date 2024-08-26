@@ -52,6 +52,18 @@ const View75 = () => {
         const timeValue = await getCurrentTime();
         setTime(timeValue);
     }
+    const manageTimeDate = () => {
+        const now = new Date();
+        const padL = (nr, len = 2, chr = `0`) => `${nr}`.padStart(2, chr);
+        const finalRes = (`${now.getFullYear()}-${padL(now.getMonth() + 1)}-${padL(now.getDate())} ${padL(now.getHours())}:${padL(now.getMinutes())}:${padL(now.getSeconds())}`
+        );
+        return setData({
+            ...data,
+            time: finalRes
+        });
+    }
+
+    
 
     const takeScreenshot = async () => {
         await getPicture(
