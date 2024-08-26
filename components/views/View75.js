@@ -56,10 +56,10 @@ const View75 = () => {
     const takeScreenshot = async () => {
         await getPicture(
             setPreview,
-      setIsPreview,
-      screenshotRef,
-      setIsLoading,
-      toast,
+            setIsPreview,
+            screenshotRef,
+            setIsLoading,
+            toast,
             0,
             0,
             0.5,
@@ -69,26 +69,26 @@ const View75 = () => {
 
     return (
         <>
-           {isLoading ? <Loader /> : <></>}
-      {
-        isPreview
-          ?
-          <>
-            <div className="show_preview" onClick={() => setIsPreview(false)}>
-              <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
-                <Image
-                  src={preview}
-                  height={100}
-                  width={100}
-                  alt="pre"
-                />
-              </div>
-            </div>
-          </>
-          :
-          <>
-          </>
-      }
+            {isLoading ? <Loader /> : <></>}
+            {
+                isPreview
+                    ?
+                    <>
+                        <div className="show_preview" onClick={() => setIsPreview(false)}>
+                            <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
+                                <Image
+                                    src={preview}
+                                    height={100}
+                                    width={100}
+                                    alt="pre"
+                                />
+                            </div>
+                        </div>
+                    </>
+                    :
+                    <>
+                    </>
+            }
             <div className="bill-inner-view">
                 <div className="bill-inner-view-childs">
                     <IconOptions
@@ -117,10 +117,10 @@ const View75 = () => {
                             ref={screenshotRef}
                             style={{
                                 transform: `scale(${imageDimension / 100})`,
-                             
+
                             }}
                         >
-                              <svg
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 1855 3883"
                             >
@@ -147,7 +147,7 @@ const View75 = () => {
                                             transform="translate(5580 1623)"
                                         >
                                             <tspan x="0" y="0" textAnchor="middle">
-                                            {data.amount}
+                                                {data.amount}
                                             </tspan>
                                         </text>
                                         <g data-name="Group 5" transform="translate(2796 -145)">
@@ -317,7 +317,7 @@ const View75 = () => {
                                                     </tspan>
                                                 </text>
                                             </g> */}
-                                            
+
                                             <text
                                                 fill="#fefefe"
                                                 fontFamily="Roboto-Regular, Roboto"
@@ -326,7 +326,7 @@ const View75 = () => {
                                                 transform="translate(3315 3071)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                  {data.txid1}
+                                                    {data.txid1}
                                                 </tspan>
                                             </text>
                                             <text
@@ -348,7 +348,7 @@ const View75 = () => {
                                                 transform="translate(3315 3228)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                  {data.txid3}
+                                                    {data.txid3}
                                                 </tspan>
                                             </text>
                                             <text
@@ -359,7 +359,7 @@ const View75 = () => {
                                                 transform="translate(3400 3387)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                   {data.withdrawalAmount}
+                                                    {data.withdrawalAmount}
                                                 </tspan>
                                             </text>
                                             <text
@@ -370,7 +370,7 @@ const View75 = () => {
                                                 transform="translate(3400 3552)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                  {data.networkFee}
+                                                    {data.networkFee}
                                                 </tspan>
                                             </text>
                                             <text
@@ -381,7 +381,7 @@ const View75 = () => {
                                                 transform="translate(3400 3716)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                 {data.withdrawalWallet}
+                                                    {data.withdrawalWallet}
                                                 </tspan>
                                             </text>
                                             <text
@@ -392,7 +392,7 @@ const View75 = () => {
                                                 transform="translate(3400 3880)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                  {data.time}
+                                                    {data.time}
                                                 </tspan>
                                             </text>
                                             <text
@@ -401,8 +401,8 @@ const View75 = () => {
                                                 fontSize="56"
                                                 transform="translate(3315 2922)"
                                             >
-                                                <tspan x="0" y="0"textAnchor="end">
-                                                {data.address2}
+                                                <tspan x="0" y="0" textAnchor="end">
+                                                    {data.address2}
                                                 </tspan>
                                             </text>
                                             <text
@@ -412,7 +412,7 @@ const View75 = () => {
                                                 transform="translate(3315 2848)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="end">
-                                                 {data.address1}
+                                                    {data.address1}
                                                 </tspan>
                                             </text>
                                             <g
@@ -521,35 +521,35 @@ const View75 = () => {
                                                 ></path>
                                             </g>
                                         </g>
-                                      
-                                           {
-                                        isIOS
-                                            ?
-                                            <>  <rect
-                                            width="637"
-                                            height="19"
-                                            fill="#fff"
-                                            data-name="Rectangle 5"
-                                            rx="9.5"
-                                            transform="translate(5270 4834)"
-                                        ></rect>
-                                            </>
-                                            :
-                                            <></>
-                                    }
-                                    
+
+                                        {
+                                            isIOS
+                                                ?
+                                                <>  <rect
+                                                    width="637"
+                                                    height="19"
+                                                    fill="#fff"
+                                                    data-name="Rectangle 5"
+                                                    rx="9.5"
+                                                    transform="translate(5270 4834)"
+                                                ></rect>
+                                                </>
+                                                :
+                                                <></>
+                                        }
+
                                     </g>
                                 </g>
 
-                              
+
                             </svg>
-                              <foreignObject
-                                 width="100%"
-                                  height="100%">
-                                    <div className="yellow">
-                                        <p>{data.network}</p>
-                                    </div>
-                                </foreignObject>
+                            <foreignObject
+                                width="100%"
+                                height="100%">
+                                <div className="yellow">
+                                    <p>{data.network}</p>
+                                </div>
+                            </foreignObject>
                             <IOSOption
                                 battery={battery}
                                 isOption={isOption}
@@ -564,7 +564,7 @@ const View75 = () => {
                         </div>
                     </div>
                 </div >
-          
+
                 <div className="bill-inner-view-childs">
                     <h4 className="section-heading">INPUTS - {pageName}</h4>
                     <div className="screenshot-btn">
@@ -664,7 +664,7 @@ const View75 = () => {
                         </div>
                     </div>
                 </div>
-              
+
             </div>
 
         </>
