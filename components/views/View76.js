@@ -72,12 +72,6 @@ const View76 = () => {
             statusTime: formattedDateTime
         });
     };
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 54ad86fa8c2fbc75a97af0f057c22f7331255faa
 
     const takeScreenshot = async () => {
         await getPicture(
