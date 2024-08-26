@@ -9,6 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 import Image from "next/image";
+import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 
 const View31 = () => {
 
@@ -118,8 +119,12 @@ const View31 = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 2460 3662"
-                                className="fontHelveticaworld"
                             >
+                                <style>
+                                    {
+                                        HelveticaBaseEncoded
+                                    }
+                                </style>
                                 <defs>
                                     <pattern
                                         id="pattern"
