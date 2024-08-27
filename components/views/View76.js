@@ -1010,7 +1010,7 @@ const View76 = () => {
                                                     transform="translate(.12 85.563)"
                                                 >
                                                     <tspan x="0" y="0">
-                                                    {data.date2}
+                                                        {data.date2}
                                                     </tspan>
                                                 </text>
                                                 <text
@@ -1176,7 +1176,7 @@ const View76 = () => {
                                                     transform="translate(580.12 166)"
                                                 >
                                                     <tspan x="0" y="0">
-                                                    {data.description4}
+                                                        {data.description4}
                                                     </tspan>
                                                 </text>
                                                 <text
@@ -1610,7 +1610,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner">
+                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
                             <label>Transaction 1</label>
                             <input
                                 type="text"
@@ -1649,7 +1649,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner">
+                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
                             <label>Transaction 2</label>
                             <input
                                 type="text"
@@ -1688,7 +1688,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner">
+                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
                             <label>Transaction 3</label>
                             <input
                                 type="text"

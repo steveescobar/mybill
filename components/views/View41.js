@@ -177,29 +177,6 @@ const View41 = () => {
                                             {data.time}
                                         </tspan>
                                     </text>
-                                    <ellipse
-                                        cx="12.5"
-                                        cy="12"
-                                        fill="#090909"
-                                        data-name="Ellipse 44"
-                                        rx="12.5"
-                                        ry="12"
-                                        transform="translate(2711 231)"
-                                    ></ellipse>
-                                    <ellipse
-                                        cx="23"
-                                        cy="16.5"
-                                        data-name="Ellipse 45"
-                                        rx="23"
-                                        ry="16.5"
-                                        transform="translate(2701 261)"
-                                    ></ellipse>
-                                    <path
-                                        fill="#f8f8f8"
-                                        d="M0 0H59V18H0z"
-                                        data-name="Rectangle 167"
-                                        transform="translate(2693 282)"
-                                    ></path>
                                     <rect
                                         width="1743"
                                         height="195"
@@ -478,7 +455,6 @@ const View41 = () => {
                                         data-name="Rectangle 179"
                                         transform="translate(3891 3722)"
                                     >
-                                        <rect width="104" height="101" stroke="none" rx="13"></rect>
                                         <rect
                                             width="93"
                                             height="90"
@@ -495,7 +471,6 @@ const View41 = () => {
                                         data-name="Rectangle 180"
                                         transform="translate(3925 3751)"
                                     >
-                                        <rect width="105" height="102" stroke="none" rx="13"></rect>
                                         <rect
                                             width="94"
                                             height="91"
@@ -533,12 +508,7 @@ const View41 = () => {
                                             :
                                             <></>
                                     }
-                                    <path
-                                        fill="#f5fbf8"
-                                        d="M0 0H36V55H0z"
-                                        data-name="Rectangle 183"
-                                        transform="translate(3182 3727)"
-                                    ></path>
+                                   
                                     <path
                                         fill="#0069ff"
                                         d="M93.791 34.942a4.936 4.936 0 000-7.373L65.571 1.526a5.992 5.992 0 00-7.99 0 4.936 4.936 0 000 7.373l18.608 17.156-70.544.48A5.428 5.428 0 000 31.743a5.428 5.428 0 005.645 5.209l70.528-.482L57.6 53.627a4.936 4.936 0 000 7.373 5.992 5.992 0 007.99 0l28.22-26.043z"
@@ -581,38 +551,38 @@ const View41 = () => {
                         </div>
                     </div>
                 </div >
-                    <div className="bill-inner-view-childs">
-                        <h4 className="section-heading">INPUTS - {pageName}</h4>
-                        <div className="screenshot-btn">
-                            <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+                <div className="bill-inner-view-childs">
+                    <h4 className="section-heading">INPUTS - {pageName}</h4>
+                    <div className="screenshot-btn">
+                        <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+                    </div>
+                    <div className="global_form_wrapper">
+                        <div className="global_form_inner">
+                            <label>ETH Value</label>
+                            <input
+                                type="text"
+                                value={data.eth}
+                                name="eth"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
-                        <div className="global_form_wrapper">
-                            <div className="global_form_inner">
-                                <label>ETH Value</label>
-                                <input
-                                    type="text"
-                                    value={data.eth}
-                                    name="eth"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Wallet Address</label>
-                                <input
-                                    type="text"
-                                    value={data.address}
-                                    name="address"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.address2}
-                                    name="address2"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
+                        <div className="global_form_inner">
+                            <label>Wallet Address</label>
+                            <input
+                                type="text"
+                                value={data.address}
+                                name="address"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.address2}
+                                name="address2"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
                     </div>
+                </div>
             </div >
         </>
     )
