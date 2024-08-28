@@ -21,6 +21,7 @@ const View69 = () => {
         withdrawAlt: "",
         status: "Pending",
         date: "Aug 1, 2023 at 1:50:15 PM",
+        currency: "$",
         amount: "1,651.5",
         amountCda: "2,150.81",
         amountCdaType: "CAD",
@@ -178,7 +179,7 @@ const View69 = () => {
                                     </div>
                                     <div className="mob_2_amount2">
                                         <div className="mob_2_amount2_wrapper">
-                                            <span className="font_change_mob_2">$</span>{data.amountCda} <span>{data.amountCdaType}</span>
+                                            <span className="font_change_mob_2">{data.currency}</span>{data.amountCda} <span>{data.amountCdaType}</span>
                                         </div>
                                     </div>~
                                     <div className="withdraw_details">
@@ -252,139 +253,145 @@ const View69 = () => {
                         </div>
                     </div>
                 </div >
-               
-                    <div className="bill-inner-view-childs">
-                        <h4 className="section-heading">INPUTS - {pageName}</h4>
-                        <div className="screenshot-btn">
-                            <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+
+                <div className="bill-inner-view-childs">
+                    <h4 className="section-heading">INPUTS - {pageName}</h4>
+                    <div className="screenshot-btn">
+                        <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+                    </div>
+                    <div className="global_form_wrapper">
+                        <div className="global_form_inner">
+                            <label>Title</label>
+                            <input
+                                type="text"
+                                value={data.withdraw}
+                                name="withdraw"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.withdrawAlt}
+                                name="withdrawAlt"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
-                        <div className="global_form_wrapper">
-                            <div className="global_form_inner">
-                                <label>Title</label>
-                                <input
-                                    type="text"
-                                    value={data.withdraw}
-                                    name="withdraw"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.withdrawAlt}
-                                    name="withdrawAlt"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Status</label>
-                                <input
-                                    type="text"
-                                    value={data.status}
-                                    name="status"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Date</label>
-                                <input
-                                    type="text"
-                                    value={data.date}
-                                    name="date"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Amount</label>
-                                <input
-                                    type="text"
-                                    value={data.amount}
-                                    name="amount"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.type}
-                                    name="type"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.amountCda}
-                                    name="amountCda"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.amountCdaType}
-                                    name="amountCdaType"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Sending</label>
-                                <input
-                                    type="text"
-                                    value={data.sending}
-                                    name="sending"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
+                        <div className="global_form_inner">
+                            <label>Status</label>
+                            <input
+                                type="text"
+                                value={data.status}
+                                name="status"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Date</label>
+                            <input
+                                type="text"
+                                value={data.date}
+                                name="date"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Amount</label>
+                            <input
+                                type="text"
+                                value={data.amount}
+                                name="amount"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.type}
+                                name="type"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.currency}
+                                name="currency"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.amountCda}
+                                name="amountCda"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.amountCdaType}
+                                name="amountCdaType"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Sending</label>
+                            <input
+                                type="text"
+                                value={data.sending}
+                                name="sending"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
 
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Withdrawal to</label>
-                                <input
-                                    type="text"
-                                    value={data.withdraw1}
-                                    name="withdraw1"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                                <input
-                                    type="text"
-                                    value={data.withdraw2}
-                                    name="withdraw2"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Withdrawal to</label>
+                            <input
+                                type="text"
+                                value={data.withdraw1}
+                                name="withdraw1"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.withdraw2}
+                                name="withdraw2"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
 
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Network Type</label>
-                                <input
-                                    type="text"
-                                    value={data.networkType}
-                                    name="networkType"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Note</label>
-                                <input
-                                    type="text"
-                                    value={data.note}
-                                    name="note"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Fee</label>
-                                <input
-                                    type="text"
-                                    value={data.fee}
-                                    name="fee"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Total</label>
-                                <input
-                                    type="text"
-                                    value={data.total}
-                                    name="total"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Network Type</label>
+                            <input
+                                type="text"
+                                value={data.networkType}
+                                name="networkType"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Note</label>
+                            <input
+                                type="text"
+                                value={data.note}
+                                name="note"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Fee</label>
+                            <input
+                                type="text"
+                                value={data.fee}
+                                name="fee"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Total</label>
+                            <input
+                                type="text"
+                                value={data.total}
+                                name="total"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
                     </div>
-               
+                </div>
+
             </div >
         </>
     )

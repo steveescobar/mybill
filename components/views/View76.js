@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useRef, useState } from "react";
@@ -1763,4 +1762,4 @@ const View76 = () => {
     )
 }
 
-export default View76
+export default View76;
