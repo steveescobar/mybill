@@ -24,8 +24,8 @@ const View76 = () => {
         availBalance: "$233.33",
         date1: "Aug 21,", date1_1: "2024", description1: "INTERAC ETRNSFR SENT LETICIA", description1_1: "202423419401C50FB", amount1: "-$38.64", balance1: "$233.33",
         date2: "Aug 21,", date2_2: "2024", description2: "INTERAC ETRNSFR SENT LETICIA", description2_2: "20242341858VNNNT6", amount2: "-$25.00", balance2: "$271.97",
-        date3: "Aug 21,", date3_3: "2024", description3: "Branch transaction", amount3: "-$100.00", balance3: "$296.97",
-        date4: "Aug 21,", date4_4: "2024", description4: "TELUS MOB", amount4: "-$200.00", balance4: "$396.97",
+        date3: "Aug 21,", date3_3: "2024", description3: "Branch transaction", description3_3: "", amount3: "-$100.00", balance3: "$296.97",
+        date4: "Aug 21,", date4_4: "2024", description4: "TELUS MOB", description4_4: "", amount4: "-$200.00", balance4: "$396.97",
     });
 
     const onChangeHandler = (e) => {
@@ -140,11 +140,6 @@ const View76 = () => {
 
                             }}
                         >
-                            <style>
-                                {
-                                    RobotoBaseEncoded
-                                }
-                            </style>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 4719.546 6641"
@@ -1104,8 +1099,11 @@ const View76 = () => {
                                                     fontWeight="500"
                                                     transform="translate(580.12 166)"
                                                 >
-                                                    <tspan x="0" y="0">
+                                                    <tspan x="0" y={data.description3_3.length != 0 ? "-78" : "0"}>
                                                         {data.description3}
+                                                    </tspan>
+                                                    <tspan x="0" y="45">
+                                                        {data.description3_3}
                                                     </tspan>
                                                 </text>
                                                 <text
@@ -1175,8 +1173,11 @@ const View76 = () => {
                                                     fontWeight="500"
                                                     transform="translate(580.12 166)"
                                                 >
-                                                    <tspan x="0" y="0">
+                                                    <tspan x="0" y={data.description4_4.length != 0 ? "-78" : "0"}>
                                                         {data.description4}
+                                                    </tspan>
+                                                    <tspan x="0" y="45">
+                                                        {data.description4_4}
                                                     </tspan>
                                                 </text>
                                                 <text
@@ -1610,7 +1611,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
+                        <div className="global_form_inner">
                             <label>Transaction 1</label>
                             <input
                                 type="text"
@@ -1649,7 +1650,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
+                        <div className="global_form_inner">
                             <label>Transaction 2</label>
                             <input
                                 type="text"
@@ -1688,7 +1689,7 @@ const View76 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        <div className="global_form_inner" style={{ paddingBottom: "50px" }}>
+                        <div className="global_form_inner">
                             <label>Transaction 3</label>
                             <input
                                 type="text"
@@ -1706,6 +1707,12 @@ const View76 = () => {
                                 type="text"
                                 value={data.description3}
                                 name="description3"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.description3_3}
+                                name="description3_3"
                                 onChange={(e) => onChangeHandler(e)}
                             />
                             <input
@@ -1739,6 +1746,12 @@ const View76 = () => {
                                 type="text"
                                 value={data.description4}
                                 name="description4"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.description4_4}
+                                name="description4_4"
                                 onChange={(e) => onChangeHandler(e)}
                             />
                             <input
