@@ -22,6 +22,7 @@ const View74 = () => {
         withdrawAlt: "",
         status: "Pending",
         date: "Aug 1, 2023 at 1:50:15 PM",
+        currency: "$",
         amount: "1,319",
         amountCda: "1,784.67",
         amountCdaType: "CAD",
@@ -179,7 +180,7 @@ const View74 = () => {
                                     </div>
                                     <div className="mob_2_amount2">
                                         <div className="mob_2_amount2_wrapper">
-                                            <span className="font_change_mob_2">$</span>{data.amountCda} <span>{data.amountCdaType}</span>
+                                            <span className="font_change_mob_2">{data.currency}</span>{data.amountCda} <span>{data.amountCdaType}</span>
                                         </div>
                                     </div>
                                     <div className="withdraw_details">
@@ -306,6 +307,12 @@ const View74 = () => {
                                     type="text"
                                     value={data.type}
                                     name="type"
+                                    onChange={(e) => onChangeHandler(e)}
+                                />
+                                <input
+                                    type="text"
+                                    value={data.currency}
+                                    name="currency"
                                     onChange={(e) => onChangeHandler(e)}
                                 />
                                 <input
