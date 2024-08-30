@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 export const metadata = {
   title: "Withdrawal Receipt - Easy way to generate withdrawal receipt",
   description: "Easy way to generate withdrawal receipt",
-};
+}; 
 
 export default function RootLayout({ children }) {
   return (
