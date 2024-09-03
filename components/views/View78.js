@@ -349,7 +349,7 @@ const View78 = () => {
                                                         <g data-name="Group 10">
                                                             <g
                                                                 data-name="info-icon-svgrepo-com"
-                                                                transform="translate(1138 630.15)"
+                                                                transform="translate(1131 630.15)"
                                                             >
                                                                 <path
                                                                     fill="#858b91"
