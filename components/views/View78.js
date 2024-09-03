@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useRef, useState } from "react";
@@ -9,7 +8,7 @@ import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
-import { InterBaseEncoded } from "@/utils/encodedFonts/InterBaseEncoded";
+import { IbmBaseEncoded } from "@/utils/encodedFonts/IbmBaseEncoded";
 
 const View78 = () => {
 
@@ -20,7 +19,7 @@ const View78 = () => {
     const [data, setData] = useState({
         amount1: "-388 USDT",
         amount2: "≈ $388.05",
-        date: "16 May 2024 at 16:10",
+        date: "12 May 2024 at 12:10",
         status: "Completed",
         recipient: "TY1EfHv...jxnhvTY",
         netFee: "0 TRX ($0.00)",
@@ -143,7 +142,7 @@ const View78 = () => {
 
                                 <style>
                                     {
-                                        InterBaseEncoded
+                                        IbmBaseEncoded
                                     }
                                 </style>
 
@@ -190,7 +189,7 @@ const View78 = () => {
                                             >
                                                 <text
                                                     data-name="-388 USDT"
-                                                    fontSize="25"
+                                                    fontSize="29"
                                                     fontWeight="600"
                                                     letterSpacing="-.001em"
                                                     transform="translate(667 342)"
@@ -202,7 +201,7 @@ const View78 = () => {
                                                 <text
                                                     fill="#828181"
                                                     data-name="≈ $388.05"
-                                                    fontSize="17"
+                                                    fontSize="20"
                                                     fontWeight="500"
                                                     letterSpacing="-.025em"
                                                     transform="translate(667 373)"
@@ -228,9 +227,9 @@ const View78 = () => {
                                                         fill="#4136c1"
                                                         data-name="View on block explorer"
                                                         fontFamily="Inter"
-                                                        fontSize="12"
-                                                        fontWeight="600"
-                                                        letterSpacing=".009em"
+                                                        fontSize="14"
+                                                        fontWeight="800"
+                                                        letterSpacing="-.009em"
                                                         transform="translate(154 31)"
                                                     >
                                                         <tspan x="0" y="0">
@@ -287,6 +286,8 @@ const View78 = () => {
                                                                 </tspan>
                                                             </text>
                                                             <text
+                                                                fill="#000000a3"
+                                                                fontWeight="700"
                                                                 data-name="16 May 2024 at 16:10"
                                                                 letterSpacing="-.046em"
                                                                 transform="translate(894 469)"
@@ -296,6 +297,8 @@ const View78 = () => {
                                                                 </tspan>
                                                             </text>
                                                             <text
+                                                                fill="#000000a3"
+                                                                fontWeight="700"
                                                                 letterSpacing="-.055em"
                                                                 transform="translate(894 511)"
                                                             >
@@ -306,6 +309,8 @@ const View78 = () => {
                                                             <text
                                                                 letterSpacing="-.064em"
                                                                 transform="translate(894 555)"
+                                                                fill="#000000a3"
+                                                                fontWeight="700"
                                                             >
                                                                 <tspan x="0" y="0" textAnchor="end">
                                                                     {data.recipient}
@@ -364,9 +369,10 @@ const View78 = () => {
                                                     data-name="0 TRX ($0.00)"
                                                     fontFamily="Inter"
                                                     fontSize="17"
-                                                    fontWeight="500"
                                                     letterSpacing="-.064em"
                                                     transform="translate(1472 643)"
+                                                    fill="#000000a3"
+                                                    fontWeight="700"
                                                 >
                                                     <tspan x="" y="0" textAnchor="end">
                                                         {data.netFee}
