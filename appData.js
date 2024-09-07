@@ -76,6 +76,7 @@ import prev75 from "@/public/view/view75.png";
 import prev76 from "@/public/view/view76.png";
 import prev77 from "@/public/view/view77.png";
 import prev78 from "@/public/view/view78.png";
+import prev79 from "@/public/view/view79.png";
 
 
 
@@ -704,5 +705,13 @@ export const appData = [
         viewLink: "/dashboard/views/view78",
         isPlatform: false,
         platformName: "VIEW 78"
+    },
+    {
+        id: 79,
+        viewName: "VIEW 79",
+        viewImageSrc: prev79,
+        viewLink: "/dashboard/views/view79",
+        isPlatform: false,
+        platformName: "VIEW 79"
     },
 ]
