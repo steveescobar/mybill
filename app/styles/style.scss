@@ -2378,28 +2378,6 @@ $color1: #141c31;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .yellow {
     color: #E1B027;
     background-color: #3B371E;
@@ -2420,3 +2398,132 @@ $color1: #141c31;
     }
 }
 
+
+
+//  -----------------view80------------------start
+
+
+
+
+
+.status-80{
+    color: #349BA4 !important;
+}
+
+
+.mob_80_amount {
+    padding: 0rem 1rem;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+
+    .plus-80{
+        font-size: 5rem;
+        color: #14BE99;
+        font-weight: 400;
+        margin-left: 1.7rem;
+    }
+
+    
+    h3 {
+        font-size: 8rem;
+        color: #14BE99;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 3.9rem;
+        color: #A1C9C0;
+        margin-left: 0.9rem;
+        font-weight: 500;
+    }
+}
+
+
+.mob_80_amount2 {
+        padding: 0rem 2.5rem;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .mob_80_amount2_wrapper {
+            border: 3px solid #81ada0;
+            padding: 0.8rem 2rem;
+            border-radius: 1rem;
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-left: 1rem;
+
+            span {
+                color: #A1C9C0;
+                font-weight: 400;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+
+    .deposit_details_80 {
+        padding: 4.5rem 3rem;
+        padding-bottom: 0;
+        width: 100%;
+        background-color: #fff;
+
+        h3 {
+            font-size: 2.4rem;
+            color: #7b7b7b;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+
+    .mob_80_details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        width: 100%;
+        margin-bottom: 1.2rem;
+
+        .mob_80_details_childs {
+            .deposit{
+                color: #519BC8;
+            }
+            p {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: black;
+            }
+        }
+    }
+
+    .mob_80_details_childs_fixes {
+        text-align: end;
+    }
+
+
+
+
+    .footer-navigation-80 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36.2rem;
+
+        div {
+            height: 0.8rem;
+            width: 22rem;
+            background: #323232;
+            border-radius: 1rem;
+        }
+    }
+
+
+
+//  -----------------view80------------------end
