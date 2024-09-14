@@ -90,7 +90,9 @@ const View83 = () => {
             toast,
             0.8,
             1.5,
-            1.6
+            0.25,
+            1.6,
+            
         );
     }
 
@@ -658,15 +660,6 @@ const View83 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-                        {/* <div className="global_form_inner">
-                            <label>Exchange Rate</label>
-                            <input
-                                type="text"
-                                value={data.exchange_rate}
-                                name="exchane_rate"
-                                onChange={(e) => onChangeHandler(e)}
-                            />
-                        </div> */}
                           <div className="global_form_inner">
                             <label>Exchange Rate</label>
                             <input
