@@ -621,9 +621,9 @@ const View81 = () => {
                                                     fontFamily="OpenSans-Medium, Open Sans"
                                                     fontSize="29"
                                                     fontWeight="500"
-                                                    transform="translate(864 1610)"
+                                                    transform="translate(897 1610)"
                                                 >
-                                                    <tspan x="0" y="0" textAnchor="start">
+                                                    <tspan x="0" y="0" textAnchor="middle">
                                                         {data.price}
                                                     </tspan>
                                                 </text>
