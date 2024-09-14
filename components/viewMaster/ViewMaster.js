@@ -82,7 +82,11 @@ import View77 from '../views/View77';
 import View78 from '../views/View78';
 import View79 from '../views/View79';
 import View80 from '../views/View80';
+<<<<<<< HEAD
 import View83 from '../views/View83';
+=======
+import View82 from '../views/View82';
+>>>>>>> a2f20e72feda26b7b806fd42a251b04445bf26b4
 
 const ViewMaster = () => {
 
@@ -173,7 +177,11 @@ const ViewMaster = () => {
             {pageName === "78" && <View78 />}
             {pageName === "79" && <View79 />}
             {pageName === "80" && <View80 />}
+<<<<<<< HEAD
             {pageName === "83" && <View83 />}
+=======
+            {pageName === "82" && <View82 />}
+>>>>>>> a2f20e72feda26b7b806fd42a251b04445bf26b4
         </>
     )
 }

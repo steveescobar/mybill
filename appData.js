@@ -78,7 +78,11 @@ import prev77 from "@/public/view/view77.png";
 import prev78 from "@/public/view/view78.png";
 import prev79 from "@/public/view/view79.png";
 import prev80 from "@/public/view/view80.png";
+<<<<<<< HEAD
 import prev83 from "@/public/view/view83.png";
+=======
+import prev82 from "@/public/view/view82.png";
+>>>>>>> a2f20e72feda26b7b806fd42a251b04445bf26b4
 
 
 
@@ -725,11 +729,20 @@ export const appData = [
         platformName: "VIEW 80"
     },
     {
+<<<<<<< HEAD
         id: 83,
         viewName: "VIEW 83",
         viewImageSrc: prev83,
         viewLink: "/dashboard/views/view83",
         isPlatform: false,
         platformName: "VIEW 83"
+=======
+        id: 82,
+        viewName: "VIEW 82",
+        viewImageSrc: prev82,
+        viewLink: "/dashboard/views/view82",
+        isPlatform: false,
+        platformName: "VIEW 82"
+>>>>>>> a2f20e72feda26b7b806fd42a251b04445bf26b4
     },
 ]
