@@ -46,18 +46,18 @@ const View82 = () => {
 
     const manageTimeDate = () => {
         const now = new Date();
-    
+
         // Format time as 10:37PM
         let hours = now.getHours();
         let minutes = now.getMinutes();
         let ampm = hours >= 12 ? 'PM' : 'AM';
-        
+
         hours = hours % 12;
         hours = hours ? hours : 12; // Convert '0' hour to '12'
         minutes = minutes < 10 ? '0' + minutes : minutes; // Add leading zero to minutes
-        
+
         const formattedTime = hours + ':' + minutes + ampm;
-        
+
         return setData({
             ...data,
             time: formattedTime
@@ -572,15 +572,24 @@ const View82 = () => {
                                             {"available in your Cash App"}
                                         </tspan>
                                     </text>
-                                    <rect
-                                        id="Rectangle_8"
-                                        data-name="Rectangle 8"
-                                        width={209}
-                                        height={8}
-                                        rx={4}
-                                        transform="translate(1830 1575)"
-                                        fill="#fff"
-                                    />
+                                    {
+                                        isIOS
+                                            ?
+                                            <>
+                                                <rect
+                                                    id="Rectangle_8"
+                                                    data-name="Rectangle 8"
+                                                    width={209}
+                                                    height={8}
+                                                    rx={4}
+                                                    transform="translate(1830 1575)"
+                                                    fill="#fff"
+                                                />
+                                            </>
+                                            :
+                                            <>
+                                            </>
+                                    }
                                 </g>
                             </svg>
                             <IOSOption
