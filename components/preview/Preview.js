@@ -11,6 +11,7 @@ const Preview = () => {
     const [allData, setAllData] = useState(appData);
     const [filteredData, setFilteredData] = useState(appData);
     const [searchQuery, setSearchQuery] = useState("");
+    // added
 
     const router = useRouter();
 
