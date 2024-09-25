@@ -86,6 +86,7 @@ import View81 from '../views/View81';
 import View82 from '../views/View82';
 import View83 from '../views/View83';
 import View84 from '../views/View84';
+import View85 from '../views/View85';
 
 
 const ViewMaster = () => {
@@ -181,6 +182,7 @@ const ViewMaster = () => {
             {pageName === "82" && <View82 />}
             {pageName === "83" && <View83 />}
             {pageName === "84" && <View84 />}
+            {pageName === "85" && <View85 />}
           
         </>
     )
