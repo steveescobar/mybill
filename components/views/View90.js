@@ -176,6 +176,7 @@ const View90 = () => {
                                         fontFamily="Inter"
                                         fontSize="37"
                                         fontWeight="600"
+                                        letterSpacing="0.022em"
                                         transform="translate(1723 1041)"
                                     >
                                         <tspan x="0" y="0">
