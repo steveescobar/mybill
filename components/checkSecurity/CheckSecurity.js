@@ -20,7 +20,7 @@ const CheckSecurity = ({ user, loggedInUser }) => {
     };
 
     checkSecurity();
-  }, []);
+  }, [loggedInUser?.securityCode,router,user?.accountStatus,user?.securityCode]);
 
   return null;
 };

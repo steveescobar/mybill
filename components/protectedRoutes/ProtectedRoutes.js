@@ -21,7 +21,7 @@ const ProtectedRoutes = ({ authUser, userType }) => {
             }
         }
 
-    }, []);
+    }, [authUser?.role,router,userType]);
 
     return;
 }
