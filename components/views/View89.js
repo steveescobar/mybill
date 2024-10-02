@@ -846,7 +846,7 @@ const View89 = () => {
                             />
                         </div>
                         <div className="global_form_inner">
-                            <label>Estimatedtime</label>
+                            <label>Estimated Time</label>
                             <input
                                 type="text"
                                 value={data.estimatedtime}
