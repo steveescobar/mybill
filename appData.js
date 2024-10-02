@@ -81,9 +81,11 @@ import prev80 from "@/public/view/view80.png";
 import prev81 from "@/public/view/view81.png";
 import prev82 from "@/public/view/view82.png";
 import prev83 from "@/public/view/view83.png";
-
-
-
+import prev84 from "@/public/view/view84.png";
+import prev85 from "@/public/view/view85.png";
+import prev86 from "@/public/view/view86.png";
+import prev87 from "@/public/view/view87.png";
+import prev89 from "@/public/view/view89.png";
 
 export const appData = [
     {
@@ -735,7 +737,6 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 81"
     },
-
     {
         id: 82,
         viewName: "VIEW 82",
@@ -752,5 +753,45 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 83"
     },
- 
+    {
+        id: 84,
+        viewName: "VIEW 84",
+        viewImageSrc: prev84,
+        viewLink: "/dashboard/views/view84",
+        isPlatform: false,
+        platformName: "VIEW 84"
+    },
+    {
+        id: 85,
+        viewName: "VIEW 85",
+        viewImageSrc: prev85,
+        viewLink: "/dashboard/views/view85",
+        isPlatform: false,
+        platformName: "VIEW 85"
+    },
+    {
+        id: 86,
+        viewName: "VIEW 86",
+        viewImageSrc: prev86,
+        viewLink: "/dashboard/views/view86",
+        isPlatform: false,
+        platformName: "VIEW 86"
+    },
+    {
+        id: 87,
+        viewName: "VIEW 87",
+        viewImageSrc: prev87,
+        viewLink: "/dashboard/views/view87",
+        isPlatform: false,
+        platformName: "VIEW 87"
+    },
+    {
+        id: 89,
+        viewName: "VIEW 89",
+        viewImageSrc: prev89,
+        viewLink: "/dashboard/views/view89",
+        isPlatform: false,
+        platformName: "VIEW 89"
+    },
+
 ]
