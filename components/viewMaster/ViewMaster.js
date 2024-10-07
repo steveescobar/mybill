@@ -89,9 +89,10 @@ import View84 from '../views/View84';
 import View85 from '../views/View85';
 import View86 from '../views/View86';
 import View87 from '../views/View87';
-import View88 from '../views/View88';   
+import View88 from '../views/View88';
 import View89 from '../views/View89';
 import View90 from '../views/View90';
+import View91 from '../views/View91';
 
 
 
@@ -191,11 +192,10 @@ const ViewMaster = () => {
             {pageName === "85" && <View85 />}
             {pageName === "86" && <View86 />}
             {pageName === "87" && <View87 />}
-            {pageName === "88" && <View88 />}   
+            {pageName === "88" && <View88 />}
             {pageName === "89" && <View89 />}
             {pageName === "90" && <View90 />}
-           
-          
+            {pageName === "91" && <View91 />}
         </>
     )
 }
