@@ -22,6 +22,8 @@ const View93 = () => {
         date: 'October 11, 2024, 9:20:15 PM',
         address1: '0x0A0DD91a39e0a55d2053D9ea3Ce50CA9Eb0c',
         address2: 'aD11',
+        networkFee1: '0.00021 ETH',
+        networkFee2: '$ 0.51',
     });
 
     const onChangeHandler = (e) => {
@@ -348,8 +350,8 @@ const View93 = () => {
                                                 fontWeight="700"
                                                 transform="translate(802 348)"
                                             >
-                                                <tspan x="0" y="0">
-                                                    0.00021 ETH = $ 0.51
+                                                <tspan x="0" y="0" textAnchor="start">
+                                                    {data.networkFee1} ≈ {data.networkFee2}
                                                 </tspan>
                                             </text>
                                             <text
@@ -705,6 +707,21 @@ const View93 = () => {
                                 type="text"
                                 value={data.from}
                                 name="from"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Network Fee</label>
+                            <input
+                                type="text"
+                                value={data.networkFee1}
+                                name="networkFee1"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.networkFee2}
+                                name="networkFee2"
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
