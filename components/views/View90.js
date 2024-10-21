@@ -9,6 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import { InterBaseEncoded } from "@/utils/encodedFonts/InterBaseEncoded";
+import Page93Icons from "../options/Page93Icons";
 
 const View90 = () => {
 
@@ -35,7 +36,7 @@ const View90 = () => {
     const [time, setTime] = useState("9:34");
     const [network, setNetwork] = useState(4);
     const [net, setNet] = useState("wifi");
-    const [isBattery, setIsBattery] = useState(true);
+    const [isBattery, setIsBattery] = useState(false);
     const [battery, setBattery] = useState(50);
     const [bgColor, setBgColor] = useState("#ffffff");
     const [isOption, setIsOption] = useState(true);
@@ -436,7 +437,7 @@ const View90 = () => {
 
                                 </g>
                             </svg>
-                            <IOSOption
+                            {/* <IOSOption
                                 battery={battery}
                                 isOption={isOption}
                                 time={time}
@@ -446,6 +447,18 @@ const View90 = () => {
                                 iconPadding={`2rem 5rem 0rem 7rem`}
                                 isDarkBg={false}
                                 isIOS={isIOS}
+                            /> */}
+                            <Page93Icons
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2rem 5rem 0rem 7rem`}
+                                isDarkBg={false}
+                                isIOS={isIOS}
+                                bgColor="#141a30"
                             />
                         </div>
                     </div>

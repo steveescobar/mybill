@@ -9,7 +9,8 @@ const Page93Icons = ({
     isBattery,
     iconPadding,
     isDarkBg,
-    isIOS
+    isIOS,
+    bgColor
 }) => {
     return (
         <>
@@ -141,7 +142,7 @@ const Page93Icons = ({
                                                     <div className="battery-tip" style={{
                                                         height: "10px",
                                                         width: "4px",
-                                                        background: isDarkBg ? "rgb(137 131 131)" : "rgb(96 96 96 / 44%)",
+                                                        background: isDarkBg ? "rgb(137 131 131)" : "#bdbdbda1",
                                                         borderRadius: "0 12px 12px 0",
                                                         marginLeft: "1px",
                                                         opacity: "0.5"
@@ -149,18 +150,18 @@ const Page93Icons = ({
                                                     <div className="battery-outer-box" style={{
                                                         height: "40px",
                                                         width: "80px",
-                                                        background: isDarkBg ? "rgb(96 96 96 / 0%)" : "#ffffff70",
+                                                        background: isDarkBg ? "rgb(96 96 96 / 0%)" : "#ffffff00",
                                                         borderRadius: "15px",
                                                         position: "relative",
                                                         overflow: "hidden",
-                                                        border: "3px solid #bdbdbd",
+                                                        border: "3px solid #bdbdbda1",
                                                     }}>
                                                         <div className="battery-progress" style={{
                                                             position: "absolute",
                                                             height: "100%",
                                                             width: `${battery}%`,
                                                             borderRadius: "13px",
-                                                            border: "3px solid rgb(239 242 249)",
+                                                            border: isDarkBg ? "3px solid rgb(239 242 249)" : `3px solid ${bgColor}`,
                                                             background: isBattery && parseFloat(battery) <= 20 ? "rgb(252 67 41)" : isDarkBg ? "black" : "white",
 
                                                         }}>
@@ -401,7 +402,7 @@ const Page93Icons = ({
                                                                     borderRadius: "5px",
                                                                     position: "relative",
                                                                     overflow: "hidden",
-                                                                    border: isDarkBg ? "2px solid #0000001c" : "2px solid white",
+                                                                    border: isDarkBg ? "2px solid #0000001c" : "2px solid red",
                                                                     padding: "0.1rem"
 
                                                                 }}>

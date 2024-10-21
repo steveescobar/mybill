@@ -5,10 +5,10 @@ import toast from 'react-hot-toast';
 import Loader from '../loader/Loader';
 import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
-import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import { InterBaseEncoded } from "@/utils/encodedFonts/InterBaseEncoded";
+import Page93Icons from "../options/Page93Icons";
 
 const View88 = () => {
 
@@ -41,7 +41,7 @@ const View88 = () => {
     const [time, setTime] = useState("9:34");
     const [network, setNetwork] = useState(4);
     const [net, setNet] = useState("wifi");
-    const [isBattery, setIsBattery] = useState(true);
+    const [isBattery, setIsBattery] = useState(false);
     const [battery, setBattery] = useState(50);
     const [bgColor, setBgColor] = useState("#ffffff");
     const [isOption, setIsOption] = useState(true);
@@ -72,7 +72,6 @@ const View88 = () => {
             date: formattedDate
         });
     }
-
 
     const takeScreenshot = async () => {
         await getPicture(
@@ -561,7 +560,18 @@ const View88 = () => {
                                     </g>
                                 </g>
                             </svg>
-                            <IOSOption
+                            {/* <IOSOption
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2.5rem 5rem 0rem 7rem`}
+                                isDarkBg={true}
+                                isIOS={isIOS}
+                            /> */}
+                            <Page93Icons
                                 battery={battery}
                                 isOption={isOption}
                                 time={time}

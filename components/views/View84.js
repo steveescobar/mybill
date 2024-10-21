@@ -6,12 +6,11 @@ import arrow from "@/public/arrow.png";
 import Loader from '../loader/Loader';
 import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
-import IOSOption from '../options/IOSOption';
 import getPicture from '@/utils/getPicture';
 import Image from "next/image";
+import Page93Icons from "../options/Page93Icons";
 
-
-const View84= () => {
+const View84 = () => {
 
     const screenshotRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -44,7 +43,7 @@ const View84= () => {
     const [time, setTime] = useState("9:34");
     const [network, setNetwork] = useState(4);
     const [net, setNet] = useState("wifi");
-    const [isBattery, setIsBattery] = useState(true);
+    const [isBattery, setIsBattery] = useState(false);
     const [battery, setBattery] = useState(50);
     const [bgColor, setBgColor] = useState("#ffffff");
     const [isOption, setIsOption] = useState(true);
@@ -242,7 +241,7 @@ const View84= () => {
                                     }
                                 </div>
                             </div>
-                            <IOSOption
+                            {/* <IOSOption
                                 battery={battery}
                                 isOption={isOption}
                                 time={time}
@@ -251,6 +250,18 @@ const View84= () => {
                                 isBattery={isBattery}
                                 iconPadding={`2.5rem 4rem 0rem 5.5rem`}
                                 isIOS={isIOS}
+                            /> */}
+                            <Page93Icons
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2rem 5rem 0rem 5rem`}
+                                isDarkBg={false}
+                                isIOS={isIOS}
+                                bgColor= "rgb(20 28 49)"
                             />
                         </div>
                     </div>
