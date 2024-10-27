@@ -250,7 +250,6 @@ const View94 = () => {
                                                 data-name="518.31 USDT"
                                                 fontFamily="Roboto-Regular, Roboto"
                                                 fontSize="177"
-                                                fontWeight="550"
                                                 transform="translate(3154 1613)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="middle">
