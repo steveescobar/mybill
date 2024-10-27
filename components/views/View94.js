@@ -7,14 +7,14 @@ import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
-import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
+import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 import Image from "next/image";
 
 const View94 = () => {
 
     const screenshotRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
-    const pageName = "VIEW 92";
+    const pageName = "VIEW 94";
 
     const [data, setData] = useState({
 
@@ -135,7 +135,7 @@ const View94 = () => {
                             >
                                 <style>
                                     {
-                                        HelveticaBaseEncoded
+                                        RobotoBaseEncoded
                                     }
                                 </style>
                                 <defs>
@@ -250,6 +250,7 @@ const View94 = () => {
                                                 data-name="518.31 USDT"
                                                 fontFamily="Roboto-Regular, Roboto"
                                                 fontSize="177"
+                                                fontWeight="550"
                                                 transform="translate(3154 1613)"
                                             >
                                                 <tspan x="0" y="0" textAnchor="middle">
