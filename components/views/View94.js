@@ -251,6 +251,7 @@ const View94 = () => {
                                                 fontFamily="Roboto-Regular, Roboto"
                                                 fontSize="177"
                                                 transform="translate(3154 1613)"
+                                                fontWeight="500"
                                             >
                                                 <tspan x="0" y="0" textAnchor="middle">
                                                     {data.amount}
