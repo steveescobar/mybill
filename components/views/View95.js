@@ -8,8 +8,9 @@ import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
-import { InterBaseEncoded } from "@/utils/encodedFonts/InterBaseEncoded";
 import Page93Icons from "../options/Page93Icons";
+// import { CoinbaseEncoded } from "@/utils/encodedFonts/CoinbaseEncoded";
+import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 
 const View95 = () => {
 
@@ -144,6 +145,11 @@ const View95 = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 591 1280"
                             >
+                                <style>
+                                    {
+                                        RobotoBaseEncoded
+                                    }
+                                </style>
                                 <g id="bill_96" data-name="bill 96" transform="translate(-1137.001 -153)">
                                     <path
                                         id="Rectangle_8"
