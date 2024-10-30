@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "HelveticaWorld", sans-serif;
     src: url('/public/fonts/HelveticaWorld-Regular.ttf') format('ttf');
@@ -9,6 +8,14 @@
 @font-face {
     font-family: "DIN", sans-serif;
     src: url('/public/fonts/DIN_Light_Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coinbase Sans';
+    src: url('/fonts/coinbase-sans-regular.ttf') format('ttf'),
+        url('/fonts/coinbase-sans-medium.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,4 +42,8 @@
 
 .fontInter * {
     font-family: "Inter", sans-serif !important;
+}
+
+.fontCoinbaseSans * {
+    font-family: "Coinbase Sans", sans-serif !important;
 }

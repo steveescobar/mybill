@@ -849,4 +849,12 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 94"
     },
+    {
+        id: 95,
+        viewName: "VIEW 95",
+        viewImageSrc: prev94,
+        viewLink: "/dashboard/views/view95",
+        isPlatform: false,
+        platformName: "VIEW 95"
+    },
 ]
