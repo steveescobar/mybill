@@ -9,7 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import Page93Icons from "../options/Page93Icons";
-import { CoinbaseBaseEncoded } from "@/utils/encodedFonts/CoinBaseEncoded";
+import { CoinbaseBaseEncoded } from "@/utils/encodedFonts/CoinbaseEncoded";
 
 const View95 = () => {
 
