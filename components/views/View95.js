@@ -9,8 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import Page93Icons from "../options/Page93Icons";
-// import { CoinbaseEncoded } from "@/utils/encodedFonts/CoinbaseEncoded";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import { CoinbaseBaseEncoded } from "@/utils/encodedFonts/CoinBaseEncoded";
 
 const View95 = () => {
 
@@ -147,7 +146,7 @@ const View95 = () => {
                             >
                                 <style>
                                     {
-                                        RobotoBaseEncoded
+                                        CoinbaseBaseEncoded
                                     }
                                 </style>
                                 <g id="bill_96" data-name="bill 96" transform="translate(-1137.001 -153)">
@@ -177,7 +176,7 @@ const View95 = () => {
                                         data-name="Received BTC"
                                         fontFamily="CoinbaseSans-Medium, Coinbase Sans"
                                         fontSize="30"
-                                        fontWeight="500"
+                                        fontWeight="600"
                                         transform="translate(1333.001 283.073)"
                                     >
                                         <tspan x="0" y="0">
@@ -199,8 +198,9 @@ const View95 = () => {
                                     <text
                                         id="_161.35"
                                         data-name="$161.35"
-                                        fontFamily="CoinbaseText-Regular, Coinbase Text"
+                                        fontFamily="CoinbaseSans-Medium, Coinbase Sans"
                                         fontSize="44"
+                                        fontWeight="600"
                                         transform="translate(1432 436)"
                                     >
                                         <tspan x="0" y="0" textAnchor="middle">
@@ -314,7 +314,7 @@ const View95 = () => {
                                         fill="#f7961b"
                                         d="M29.648 18.825A10.825 10.825 0 1 1 18.824 8a10.825 10.825 0 0 1 10.824 10.825m-6.185-1.54c.214-1.44-.882-2.213-2.386-2.732l.484-1.951-1.193-.3-.477 1.9q-.471-.118-.954-.223l.477-1.909-1.193-.3-.489 1.951q-.387-.087-.76-.179l-1.618-.415-.315 1.273s.882.2.864.214a.635.635 0 0 1 .555.69l-.558 2.219q.061.017.119.039c-.039-.008-.084-.021-.126-.031l-.773 3.115a.435.435 0 0 1-.545.284c.013.018-.864-.214-.864-.214l-.589 1.358 1.551.384q.43.112.847.218l-.49 1.974 1.193.3.489-1.95q.477.128.947.239l-.5 1.945 1.193.3.487-1.967c2.028.384 3.548.227 4.19-1.6a2.085 2.085 0 0 0-1.092-2.881 1.89 1.89 0 0 0 1.514-1.742Zm-2.715 3.805c-.366 1.476-2.85.676-3.658.477l.65-2.614c.8.2 3.387.6 3 2.139Zm.366-3.827c-.336 1.34-2.4.659-3.072.493l.589-2.369c.672.166 2.829.477 2.479 1.877Z"
                                         data-name="Path 9"
-                                        transform="translate(1565 620.142)"
+                                        transform="translate(1555 620.142)"
                                     ></path>
                                     <path
                                         id="arrow-right-solid-2"
@@ -386,7 +386,7 @@ const View95 = () => {
                                         data-name="View on block explorer"
                                         fontFamily="CoinbaseSans-Medium, Coinbase Sans"
                                         fontSize="30.15"
-                                        fontWeight="500"
+                                        fontWeight="600"
                                         transform="translate(1265.501 1240.5)"
                                     >
                                         <tspan x="0" y="0">

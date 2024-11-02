@@ -13,8 +13,8 @@
 }
 
 @font-face {
-    font-family: "Coinbase";
-    src: url('/public/fonts/Coinbase-Sans-Medium.woff2') format('woff2');
+    font-family: "Coinbase-Sans";
+    src: url('/public/fonts/Coinbase-Sans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -45,6 +45,6 @@
 }
 
 .fontCoinbase * {
-    font-family: "Coinbase" !important;
+    font-family: "Coinbase-Sans" !important;
 }
 
