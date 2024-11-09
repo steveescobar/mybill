@@ -9,6 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
 import Image from "next/image";
+import Page93Icons from "../options/Page93Icons";
 
 const View92 = () => {
 
@@ -360,7 +361,7 @@ const View92 = () => {
                                     </g>
                                 </g>
                             </svg>
-                            <IOSOption
+                            {/* <IOSOption
                                 battery={battery}
                                 isOption={isOption}
                                 time={time}
@@ -371,6 +372,18 @@ const View92 = () => {
                                 // iconPadding={`2rem 4.5rem 0rem 6rem`}
                                 isDarkBg={false}
                                 isIOS={isIOS}
+                            /> */}
+                            <Page93Icons
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2rem 5rem 0rem 7rem`}
+                                isDarkBg={false}
+                                isIOS={isIOS}
+                                bgColor="#141a30"
                             />
                         </div>
                     </div>

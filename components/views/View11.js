@@ -9,6 +9,7 @@ import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
+import Page93Icons from "../options/Page93Icons";
 
 const View11 = () => {
 
@@ -259,7 +260,7 @@ const View11 = () => {
                                     </g>
                                 </g>
                             </svg>
-                            <IOSOption
+                            {/* <IOSOption
                                 battery={battery}
                                 isOption={isOption}
                                 time={time}
@@ -269,45 +270,57 @@ const View11 = () => {
                                 iconPadding={`2rem 5rem 0rem 7rem`}
                                 isDarkBg={true}
                                 isIOS={isIOS}
+                            /> */}
+                            <Page93Icons
+                                battery={battery}
+                                isOption={isOption}
+                                time={time}
+                                network={network}
+                                net={net}
+                                isBattery={isBattery}
+                                iconPadding={`2rem 5rem 0rem 7rem`}
+                                isDarkBg={true}
+                                isIOS={isIOS}
+                                bgColor="#141a30"
                             />
                         </div>
                     </div>
                 </div >
-                    <div className="bill-inner-view-childs">
-                        <h4 className="section-heading">INPUTS - {pageName}</h4>
-                        <div className="screenshot-btn">
-                            <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+                <div className="bill-inner-view-childs">
+                    <h4 className="section-heading">INPUTS - {pageName}</h4>
+                    <div className="screenshot-btn">
+                        <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
+                    </div>
+                    <div className="global_form_wrapper">
+                        <div className="global_form_inner">
+                            <label>Amount</label>
+                            <input
+                                type="text"
+                                value={data.amount}
+                                name="amount"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
-                        <div className="global_form_wrapper">
-                            <div className="global_form_inner">
-                                <label>Amount</label>
-                                <input
-                                    type="text"
-                                    value={data.amount}
-                                    name="amount"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>CA$</label>
-                                <input
-                                    type="text"
-                                    value={data.ca$}
-                                    name="ca$"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
-                            <div className="global_form_inner">
-                                <label>Min</label>
-                                <input
-                                    type="text"
-                                    value={data.min}
-                                    name="min"
-                                    onChange={(e) => onChangeHandler(e)}
-                                />
-                            </div>
+                        <div className="global_form_inner">
+                            <label>CA$</label>
+                            <input
+                                type="text"
+                                value={data.ca$}
+                                name="ca$"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Min</label>
+                            <input
+                                type="text"
+                                value={data.min}
+                                name="min"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
                     </div>
+                </div>
             </div >
         </>
     )
