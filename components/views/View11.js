@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import Loader from '../loader/Loader';
 import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
-import IOSOption from '../options/IOSOption';
+// import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
@@ -32,7 +32,7 @@ const View11 = () => {
     const [time, setTime] = useState("9:34");
     const [network, setNetwork] = useState(4);
     const [net, setNet] = useState("wifi");
-    const [isBattery, setIsBattery] = useState(true);
+    const [isBattery, setIsBattery] = useState(false);
     const [battery, setBattery] = useState(50);
     const [bgColor, setBgColor] = useState("#ffffff");
     const [isOption, setIsOption] = useState(true);
