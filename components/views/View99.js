@@ -723,7 +723,7 @@ const View99 = () => {
                                 iconPadding={`2rem 5rem 0rem 7rem`}
                                 isDarkBg={false}
                                 isIOS={isIOS}
-                                bgColor="#141a30"
+                                bgColor="rgb(157 25 50)"
                             />
                         </div>
                     </div>
