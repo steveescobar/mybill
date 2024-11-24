@@ -18,8 +18,8 @@ const View106 = () => {
 
     const [data, setData] = useState({
 
-        totalBalance: "CA$1,059.70",
-        caDollar: "CA$1,059.70",
+        totalBalance: "1,059.70",
+        caDollar: "1,059.70",
     });
 
     const onChangeHandler = (e) => {
@@ -195,7 +195,7 @@ const View106 = () => {
                                         transform="translate(1418 298)"
                                     >
                                         <tspan x="0" y="0" textAnchor="end">
-                                            ↑ {data.totalBalance}
+                                            ↑ CA${data.totalBalance}
                                         </tspan>
                                     </text>
                                     <rect
@@ -434,7 +434,7 @@ const View106 = () => {
                                         transform="translate(1022 265)"
                                     >
                                         <tspan x="0" y="0" textAnchor="start">
-                                            0.00% ({data.totalBalance})
+                                            0.00% (CA${data.totalBalance})
                                         </tspan>
                                     </text>
                                     <rect
@@ -482,7 +482,7 @@ const View106 = () => {
                                         transform="translate(1417.5 745)"
                                     >
                                         <tspan x="0" y="0" textAnchor="end">
-                                            {data.caDollar}
+                                            CA${data.caDollar}
                                         </tspan>
                                     </text>
                                     <text
@@ -494,7 +494,7 @@ const View106 = () => {
                                         transform="translate(1417.5 803)"
                                     >
                                         <tspan x="0" y="0" textAnchor="end">
-                                            {data.caDollar}
+                                            CA${data.caDollar}
                                         </tspan>
                                     </text>
                                     <text
