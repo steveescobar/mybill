@@ -101,6 +101,7 @@ import prev100 from "@/public/view/view100.png";
 import prev101 from "@/public/view/view101.png";
 import prev102 from "@/public/view/view102.png";
 import prev103 from "@/public/view/view103.png";
+import prev104 from "@/public/view/view104.png";
 
 
 export const appData = [
@@ -929,5 +930,13 @@ export const appData = [
         viewLink: "/dashboard/views/view103",
         isPlatform: false,
         platformName: "VIEW 103"
+    },
+    {
+        id: 104,
+        viewName: "VIEW 104",
+        viewImageSrc: prev104,
+        viewLink: "/dashboard/views/view104",
+        isPlatform: false,
+        platformName: "VIEW 104"
     },
 ]
