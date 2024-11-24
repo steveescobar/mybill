@@ -7,9 +7,8 @@ import getCurrentTime from '@/utils/getCorrentTime';
 import IconOptions from '../options/IconOptions';
 import IOSOption from '../options/IOSOption';
 import getPicture from "@/utils/getPicture";
-import { RobotoBaseEncoded } from "@/utils/encodedFonts/RobotoBaseEncoded";
 import Image from "next/image";
-import { HelveticaBaseEncoded } from "@/utils/encodedFonts/HelveticaWorld";
+import { EuclidCircularBEncoded } from "@/utils/encodedFonts/EuclidCircularBEncoded";
 
 const View103 = () => {
 
@@ -125,7 +124,7 @@ const View103 = () => {
                             >
                                 <style>
                                     {
-                                        HelveticaBaseEncoded
+                                        EuclidCircularBEncoded
                                     }
                                 </style>
                                 <defs>
