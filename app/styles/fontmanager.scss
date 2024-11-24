@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Kraken Product";
+    src: url('/public/fonts/Kraken-Product-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .fontRoboto * {
     font-family: "Roboto", sans-serif !important;
@@ -48,3 +55,6 @@
     font-family: "Coinbase-Sans" !important;
 }
 
+.fontKrakenProduct * {
+    font-family: "Kraken Product" !important;
+}
