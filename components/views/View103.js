@@ -550,7 +550,7 @@ const View103 = () => {
                                         transform="translate(1316 754)"
                                     >
                                         <tspan x="0" y="0">
-                                            Don&apos;t see your token?
+                                            Don&apos;t see your token?{" "}
                                         </tspan>
                                         <tspan y="0" fill="#fff"></tspan>
                                         <tspan y="0" fill="#45acfb">
