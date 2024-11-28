@@ -8,7 +8,7 @@ import IconOptions from '../options/IconOptions';
 import getPicture from "@/utils/getPicture";
 import Image from "next/image";
 import Page93Icons from "../options/Page93Icons";
-import { heeboEncoded } from "@/utils/encodedFonts/heeboEncoded";
+import { heeboEncoded } from "@/utils/encodedFonts/HeeboEncoded";
 
 const View107 = () => {
 
@@ -391,11 +391,11 @@ const View107 = () => {
                                         id="Heads_up:_your_Interac_e-Transfer_limits"
                                         data-name="Heads up: your Interac e-Transfer limits"
                                         fontFamily="Heebo-Medium, Heebo"
-                                        fontSize="26.2"
+                                        fontSize="24"
                                         fontWeight="500"
                                         transform="translate(1130 1276)"
                                     >
-                                        <tspan x="0" y="0">
+                                        <tspan x="0" y="0" fontWeight="800">
                                             Heads up:
                                         </tspan>
                                         <tspan
@@ -743,7 +743,7 @@ const View107 = () => {
                                 iconPadding={`2rem 5rem 0rem 7rem`}
                                 isDarkBg={false}
                                 isIOS={isIOS}
-                                bgColor="#141a30"
+                                bgColor="#0275bd"
                             />
                         </div>
                     </div>
