@@ -17,7 +17,7 @@ const View84 = () => {
     const pageName = "VIEW 84";
 
     const [data, setData] = useState({
-        withdraw: "Withdraw ETH (Ethereum) (ERC20))",
+        withdraw: "Withdraw ETH (Ethereum (ERC20))",
         withdrawAlt: "",
         status: "Processed",
         date: "Sep 20, 2024 at 3:53:46 PM",
