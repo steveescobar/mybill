@@ -168,7 +168,7 @@ const View100 = () => {
                                         transform="translate(5931 2386)"
                                     >
                                         <tspan x="-371.778" y="0">
-                                            Withdrawal Processing
+                                            Redemption Processing
                                         </tspan>
                                     </text>
                                     <text
@@ -342,7 +342,7 @@ const View100 = () => {
                                         transform="translate(5971 4270)"
                                     >
                                         <tspan x="-382.05" y="0">
-                                            withdrawal is completed
+                                            redemption is completed
                                         </tspan>
                                     </text>
                                     <path
