@@ -20,12 +20,14 @@ const View108 = () => {
 
         amount: "0.64",
         currency: "CAD",
+        today: "Today",
         t1: "CAD → ETH",
         t2: "Processed",
         t3: "$1,389.48 CAD",
         t4: "CAD Deposit (via Interac)",
         t5: "Processed",
         t6: "+$1,390.00 CAD",
+        yesterday: "Yesterday",
         y1: "CAD → ETH",
         y2: "Processed",
         y3: "$329.88 CAD",
@@ -423,8 +425,8 @@ const View108 = () => {
                                                 fontSize="12"
                                                 transform="translate(1001 493)"
                                             >
-                                                <tspan x="0" y="0">
-                                                    Today
+                                                <tspan x="0" y="0" textAnchor="start">
+                                                    {data.today}
                                                 </tspan>
                                             </text>
                                             <path
@@ -595,8 +597,8 @@ const View108 = () => {
                                                 fontSize="12"
                                                 transform="translate(1000.5 663)"
                                             >
-                                                <tspan x="0" y="0">
-                                                    Yesterday
+                                                <tspan x="0" y="0" textAnchor="start">
+                                                    {data.yesterday}
                                                 </tspan>
                                             </text>
                                             <path
@@ -1050,7 +1052,13 @@ const View108 = () => {
                             />
                         </div>
                         <div className="global_form_inner">
-                            <label>Today</label>
+                            <label>Day1</label>
+                            <input
+                                type="text"
+                                value={data.today}
+                                name="today"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                             <input
                                 type="text"
                                 value={data.t1}
@@ -1089,7 +1097,13 @@ const View108 = () => {
                             />
                         </div>
                         <div className="global_form_inner">
-                            <label>Yesterday</label>
+                            <label>Day2</label>
+                            <input
+                                type="text"
+                                value={data.yesterday}
+                                name="yesterday"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                             <input
                                 type="text"
                                 value={data.y1}
@@ -1128,7 +1142,7 @@ const View108 = () => {
                             />
                         </div>
                         <div className="global_form_inner">
-                            <label>Custom Date</label>
+                            <label>Custom Day and Date</label>
                             <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
                             <input
                                 type="text"
