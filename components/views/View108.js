@@ -1146,6 +1146,12 @@ const View108 = () => {
                             <button className="dateTimeBtn" onClick={() => manageTimeDate()}>Current Date and Time</button>
                             <input
                                 type="text"
+                                value={data.date}
+                                name="date"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
                                 value={data.d1}
                                 name="d1"
                                 onChange={(e) => onChangeHandler(e)}
