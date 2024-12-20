@@ -1,6 +1,6 @@
 export const OpenSansEncoded = `
 @font-face {
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans";
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,9 +8,9 @@ export const OpenSansEncoded = `
 ) format('woff2');
 }
 g * {
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans";
 }
 text * {
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans";
 }
 `
