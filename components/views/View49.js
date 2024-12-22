@@ -18,6 +18,8 @@ const View49 = () => {
 
     const [data, setData] = useState({
         amount: "229.0031 USDT",
+        fees: "1.6",
+        network: "TRC20",
         date: "2024-05-10 17:16:48",
         walletAddress1: "TWz5p9aPr7rog61eW",
         walletAddress2: "QSoc2fFNRJWC21fCV",
@@ -66,26 +68,26 @@ const View49 = () => {
 
     return (
         <>
-           {isLoading ? <Loader /> : <></>}
-      {
-        isPreview
-          ?
-          <>
-            <div className="show_preview" onClick={() => setIsPreview(false)}>
-              <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
-                <Image
-                  src={preview}
-                  height={100}
-                  width={100}
-                  alt="pre"
-                />
-              </div>
-            </div>
-          </>
-          :
-          <>
-          </>
-      }
+            {isLoading ? <Loader /> : <></>}
+            {
+                isPreview
+                    ?
+                    <>
+                        <div className="show_preview" onClick={() => setIsPreview(false)}>
+                            <div className="inner_preview" onClick={(e) => e.stopPropagation()}>
+                                <Image
+                                    src={preview}
+                                    height={100}
+                                    width={100}
+                                    alt="pre"
+                                />
+                            </div>
+                        </div>
+                    </>
+                    :
+                    <>
+                    </>
+            }
             <div className="bill-inner-view">
                 <div className="bill-inner-view-childs">
                     <IconOptions
@@ -114,17 +116,17 @@ const View49 = () => {
                             ref={screenshotRef}
                             style={{
                                 transform: `scale(${imageDimension / 100})`,
-                                
+
                             }}
                         >
-                              <svg
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 1803 3932"
-                              
+
                             >
                                 <style>
                                     {
-                                      RobotoBaseEncoded
+                                        RobotoBaseEncoded
                                     }
                                 </style>
                                 <g data-name="Group 309" transform="translate(-2633 -95)">
@@ -229,10 +231,10 @@ const View49 = () => {
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="59"
                                             letterSpacing=".02em"
-                                            transform="translate(4289 1420.164)"
+                                            transform="translate(4371 1420.164)"
                                         >
-                                            <tspan x="0" y="0">
-                                                1.3
+                                            <tspan x="0" y="0" textAnchor="end">
+                                                {data.fees}
                                             </tspan>
                                         </text>
                                         <text
@@ -263,10 +265,10 @@ const View49 = () => {
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="57"
                                             letterSpacing=".02em"
-                                            transform="translate(4197.863 1574.803)"
+                                            transform="translate(4371 1574.803)"
                                         >
-                                            <tspan x="0" y="0">
-                                                TRC20
+                                            <tspan x="0" y="0" textAnchor="end">
+                                                {data.network}
                                             </tspan>
                                         </text>
                                         <text
@@ -438,22 +440,22 @@ const View49 = () => {
                                             </tspan>
                                         </text>
                                         {
-                                        isIOS
-                                            ?
-                                            <>
-                                               <rect
-                                            width="659"
-                                            height="16"
-                                            fill="#fff"
-                                            data-name="Rectangle 23"
-                                            rx="8"
-                                            transform="translate(3207 3979)"
-                                        ></rect>
-                                            </>
-                                            :
-                                            <></>
-                                    }
-                                       
+                                            isIOS
+                                                ?
+                                                <>
+                                                    <rect
+                                                        width="659"
+                                                        height="16"
+                                                        fill="#fff"
+                                                        data-name="Rectangle 23"
+                                                        rx="8"
+                                                        transform="translate(3207 3979)"
+                                                    ></rect>
+                                                </>
+                                                :
+                                                <></>
+                                        }
+
                                         <path
                                             d="M0 0H1791V48H0z"
                                             data-name="Rectangle 24"
@@ -540,76 +542,94 @@ const View49 = () => {
                         </div>
                     </div>
                 </div >
-               
+
                 <div className="bill-inner-view-childs">
                     <h4 className="section-heading">INPUTS - {pageName}</h4>
                     <div className="screenshot-btn">
                         <button onClick={() => takeScreenshot()}>Screenshot <i className="fa fa-copy"></i></button>
                     </div>
                     <div className="global_form_wrapper">
-                    <div className="global_form_inner">
-                        <label>Amount</label>
-                        <input
-                            type="text"
-                            value={data.amount}
-                            name="amount"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
-                    <div className="global_form_inner">
-                        <label>Date</label>
-                        <input
-                            type="text"
-                            value={data.date}
-                            name="date"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
-                    <div className="global_form_inner">
-                        <label>Withdrawal Address</label>
-                        <input
-                            type="text"
-                            value={data.walletAddress1}
-                            name="walletAddress1"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                        <input
-                            type="text"
-                            value={data.walletAddress2}
-                            name="walletAddress2"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
-                    <div className="global_form_inner">
-                        <label>Transaction Hash</label>
-                        <input
-                            type="text"
-                            value={data.walletAddress3}
-                            name="walletAddress3"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                        <input
-                            type="text"
-                            value={data.walletAddress4}
-                            name="walletAddress4"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                        <input
-                            type="text"
-                            value={data.walletAddress5}
-                            name="walletAddress5"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                        <input
-                            type="text"
-                            value={data.walletAddress6}
-                            name="walletAddress6"
-                            onChange={(e) => onChangeHandler(e)}
-                        />
-                    </div>
+                        <div className="global_form_inner">
+                            <label>Amount</label>
+                            <input
+                                type="text"
+                                value={data.amount}
+                                name="amount"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Fees</label>
+                            <input
+                                type="text"
+                                value={data.fees}
+                                name="fees"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Chain Type</label>
+                            <input
+                                type="text"
+                                value={data.network}
+                                name="network"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Date</label>
+                            <input
+                                type="text"
+                                value={data.date}
+                                name="date"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Withdrawal Address</label>
+                            <input
+                                type="text"
+                                value={data.walletAddress1}
+                                name="walletAddress1"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.walletAddress2}
+                                name="walletAddress2"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Transaction Hash</label>
+                            <input
+                                type="text"
+                                value={data.walletAddress3}
+                                name="walletAddress3"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.walletAddress4}
+                                name="walletAddress4"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.walletAddress5}
+                                name="walletAddress5"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                            <input
+                                type="text"
+                                value={data.walletAddress6}
+                                name="walletAddress6"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
                     </div>
                 </div>
-              
+
             </div>
 
         </>
