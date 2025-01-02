@@ -476,7 +476,7 @@ const View36 = () => {
                   ></path>
                   <text
                     fill="#d8d8d8"
-                    data-name="Copyright 2018 - 2024 Contact Us Inquiry Bybit's 24*7 Customer Support is ready to help you"
+                    data-name="Copyright 2018 - 2025 Contact Us Inquiry Bybit's 24*7 Customer Support is ready to help you"
                     fontFamily="Roboto-Italic, Roboto"
                     fontSize="34"
                     fontStyle="italic"
@@ -484,7 +484,7 @@ const View36 = () => {
                     transform="translate(3067 2872)"
                   >
                     <tspan x="0" y="0">
-                      Copyright 2018 - 2024 Contact Us Inquiry Bybit&apos;s 24*7 Customer
+                      Copyright 2018 - 2025 Contact Us Inquiry Bybit&apos;s 24*7 Customer
                       Support is ready to help you
                     </tspan>
                   </text>

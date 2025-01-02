@@ -280,9 +280,9 @@ const View61 = () => {
                                                 BLACK TOMATO
                                             </tspan>
                                         </text>
-                                        <text fill="#fff" data-name="© 2024" transform="translate(1084 3817)">
+                                        <text fill="#fff" data-name="© 2025" transform="translate(1084 3817)">
                                             <tspan x="-99.844" y="0">
-                                                © 2024
+                                                © 2025
                                             </tspan>
                                         </text>
                                     </g>

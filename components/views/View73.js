@@ -323,13 +323,13 @@ const View73 = () => {
                                     ></path>
                                     <text
                                         fill="#fff"
-                                        data-name="Copyright © 2024 Sriggle Tech Private Limited, All rights reserved."
+                                        data-name="Copyright © 2025 Sriggle Tech Private Limited, All rights reserved."
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="54"
                                         transform="translate(937 3782)"
                                     >
                                         <tspan x="-785.597" y="0">
-                                            Copyright © 2024 Sriggle Tech Private Limited, All rights reserved.
+                                            Copyright © 2025 Sriggle Tech Private Limited, All rights reserved.
                                         </tspan>
                                     </text>
                                 </g>

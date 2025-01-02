@@ -255,14 +255,14 @@ const View58 = () => {
                                                 ></path>
                                                 <text
                                                     fill="#efefef"
-                                                    data-name="© 2024 livemylegend. All rights reserved."
+                                                    data-name="© 2025 livemylegend. All rights reserved."
                                                     fontFamily="Roboto-Light, Roboto"
                                                     fontSize="61"
                                                     fontWeight="300"
                                                     transform="translate(3597 3765)"
                                                 >
                                                     <tspan x="-541.39" y="0">
-                                                        © 2024 livemylegend. All rights reserved.
+                                                        © 2025 livemylegend. All rights reserved.
                                                     </tspan>
                                                 </text>
                                                 <text

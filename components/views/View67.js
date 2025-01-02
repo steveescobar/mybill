@@ -278,13 +278,13 @@ const View67 = () => {
                                     ></path>
                                     <text
                                         fill="#142e0b"
-                                        data-name="© 2023 Homify. All rights reserved."
+                                        data-name="© 2025 Homify. All rights reserved."
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="61"
                                         transform="translate(1277 3800)"
                                     >
                                         <tspan x="-471.603" y="0">
-                                            © 2024 Homify. All rights reserved.
+                                            © 2025 Homify. All rights reserved.
                                         </tspan>
                                     </text>
                                     <text

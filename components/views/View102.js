@@ -295,13 +295,13 @@ const View102 = () => {
                                     <text
                                         id="_2024_Zalando._All_rights_reserved."
                                         fill="#fff"
-                                        data-name="© 2024 Zalando. All rights reserved."
+                                        data-name="© 2025 Zalando. All rights reserved."
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="58"
                                         transform="translate(20312 3840)"
                                     >
                                         <tspan x="-461.31" y="0">
-                                            © 2024 Zalando. All rights reserved.
+                                            © 2025 Zalando. All rights reserved.
                                         </tspan>
                                     </text>
                                     <text

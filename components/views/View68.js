@@ -279,13 +279,13 @@ const View68 = () => {
                                         ></path>
                                         <text
                                             fill="#142e0b"
-                                            data-name="© 2024 ABOUT YOU SE &amp; Co. KG"
+                                            data-name="© 2025 ABOUT YOU SE &amp; Co. KG"
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="61"
                                             transform="translate(3152 3800)"
                                         >
                                             <tspan x="-440.284" y="0">
-                                                © 2024 ABOUT YOU SE &amp; Co. KG
+                                                © 2025 ABOUT YOU SE &amp; Co. KG
                                             </tspan>
                                         </text>
                                         <text

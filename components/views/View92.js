@@ -284,14 +284,14 @@ const View92 = () => {
                                             ></path>
                                             <text
                                                 fill="#efefef"
-                                                data-name="© 2024 Travala.com. All rights reserved."
+                                                data-name="© 2025 Travala.com. All rights reserved."
                                                 fontFamily="Roboto-Light, Roboto"
                                                 fontSize="61"
                                                 fontWeight="300"
                                                 transform="translate(1421 3819)"
                                             >
                                                 <tspan x="-530.34" y="0">
-                                                    © 2024 Travala.com. All rights reserved.
+                                                    © 2025 Travala.com. All rights reserved.
                                                 </tspan>
                                             </text>
                                             <text

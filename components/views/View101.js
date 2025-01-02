@@ -310,16 +310,16 @@ const View101 = () => {
                                         transform="translate(1010.98 4645.207)"
                                     ></path>
                                     <text
-                                        id="Copyright_2024_Stylight._Alle_Preise_inkl."
+                                        id="Copyright_2025_Stylight._Alle_Preise_inkl."
                                         fill="#efefef"
-                                        data-name="Copyright © 2024 Stylight. Alle Preise inkl."
+                                        data-name="Copyright © 2025 Stylight. Alle Preise inkl."
                                         fontFamily="Roboto-Light, Roboto"
                                         fontSize="57"
                                         fontWeight="300"
                                         transform="translate(1801.772 4734.152)"
                                     >
                                         <tspan x="-519.165" y="0">
-                                            Copyright © 2024 Stylight. Alle Preise inkl.
+                                            Copyright © 2025 Stylight. Alle Preise inkl.
                                         </tspan>
                                     </text>
                                     <text

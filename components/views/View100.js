@@ -280,14 +280,14 @@ const View100 = () => {
                                     <text
                                         id="_2024_Vestiaire_Collective._All_rights_reserved."
                                         fill="#efefef"
-                                        data-name="© 2024 Vestiaire Collective. All rights reserved."
+                                        data-name="© 2025 Vestiaire Collective. All rights reserved."
                                         fontFamily="Roboto-Light, Roboto"
                                         fontSize="61"
                                         fontWeight="300"
                                         transform="translate(5931 4777)"
                                     >
                                         <tspan x="-618.206" y="0">
-                                            © 2024 Vestiaire Collective. All rights reserved.
+                                            © 2025 Vestiaire Collective. All rights reserved.
                                         </tspan>
                                     </text>
                                     <text

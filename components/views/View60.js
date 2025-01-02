@@ -265,13 +265,13 @@ const View60 = () => {
                                     ></path>
                                     <text
                                         fill="#142e0b"
-                                        data-name="© 2024 Trek Travel. All rights reserved."
+                                        data-name="© 2025 Trek Travel. All rights reserved."
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="61"
                                         transform="translate(7873 3341)"
                                     >
                                         <tspan x="-521.315" y="0">
-                                            © 2024 Trek Travel. All rights reserved.
+                                            © 2025 Trek Travel. All rights reserved.
                                         </tspan>
                                     </text>
                                     <text

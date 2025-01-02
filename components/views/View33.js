@@ -245,13 +245,13 @@ const View33 = () => {
                                         ></path>
                                         <text
                                             fill="#142e0b"
-                                            data-name="© 2024 Klook. All rights reserved."
+                                            data-name="© 2025 Klook. All rights reserved."
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="61"
                                             transform="translate(5979 3341)"
                                         >
                                             <tspan x="-451.677" y="0">
-                                                © 2024 Klook. All rights reserved.
+                                                © 2025 Klook. All rights reserved.
                                             </tspan>
                                         </text>
                                         <text

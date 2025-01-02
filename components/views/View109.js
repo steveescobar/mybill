@@ -286,14 +286,14 @@ const View109 = () => {
                                                         <text
                                                             id="_2024_Epic_Games_Inc._All_rights_reserved."
                                                             fill="#efefef"
-                                                            data-name="© 2024 Epic Games, Inc. All rights reserved."
+                                                            data-name="© 2025 Epic Games, Inc. All rights reserved."
                                                             fontFamily="Roboto-Light, Roboto"
                                                             fontSize="61"
                                                             fontWeight="300"
                                                             transform="translate(1421 3819)"
                                                         >
                                                             <tspan x="-580.468" y="0">
-                                                                © 2024 Epic Games, Inc. All rights reserved.
+                                                                © 2025 Epic Games, Inc. All rights reserved.
                                                             </tspan>
                                                         </text>
                                                         <text

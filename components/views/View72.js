@@ -264,13 +264,13 @@ const View72 = () => {
                                     ></path>
                                     <text
                                         fill="#142e0b"
-                                        data-name="© 2024 Adventure Travel Trade Association"
+                                        data-name="© 2025 Adventure Travel Trade Association"
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="53"
                                         transform="translate(2560 3281)"
                                     >
                                         <tspan x="-508.301" y="0">
-                                            © 2024 Adventure Travel Trade Association
+                                            © 2025 Adventure Travel Trade Association
                                         </tspan>
                                     </text>
                                     <text

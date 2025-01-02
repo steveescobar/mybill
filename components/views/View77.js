@@ -266,14 +266,14 @@ const View76 = () => {
                                                             ></path>
                                                             <text
                                                                 fill="#efefef"
-                                                                data-name="© 2023 rezdy. All rights reserved."
+                                                                data-name="© 2025 rezdy. All rights reserved."
                                                                 fontFamily="Roboto-Light, Roboto"
                                                                 fontSize="61"
                                                                 fontWeight="300"
                                                                 transform="translate(3597 3765)"
                                                             >
                                                                 <tspan x="-437.172" y="0">
-                                                                    © 2024 Rezdy. All rights reserved.
+                                                                    © 2025 Rezdy. All rights reserved.
                                                                 </tspan>
                                                             </text>
                                                             <text

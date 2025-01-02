@@ -291,14 +291,14 @@ const View97 = () => {
                                                 <text
                                                     id="_2024_integrityhome.com._All_rights_reserved."
                                                     fill="#efefef"
-                                                    data-name="© 2024 integrityhome.com. All rights reserved."
+                                                    data-name="© 2025 integrityhome.com. All rights reserved."
                                                     fontFamily="Roboto-Light, Roboto"
                                                     fontSize="61"
                                                     fontWeight="300"
                                                     transform="translate(1421 3819)"
                                                 >
                                                     <tspan x="-618.161" y="0">
-                                                        © 2024 integrityhome.com. All rights reserved.
+                                                        © 2025 integrityhome.com. All rights reserved.
                                                     </tspan>
                                                 </text>
                                                 <text

@@ -271,13 +271,13 @@ const View94 = () => {
                                             ></path>
                                             <text
                                                 fill="#000"
-                                                data-name="©2024 Nordstrom, Inc."
+                                                data-name="©2025 Nordstrom, Inc."
                                                 fontFamily="Roboto-Regular, Roboto"
                                                 fontSize="61"
                                                 transform="translate(3152 3800)"
                                             >
                                                 <tspan x="-308.887" y="0">
-                                                    ©2024 Nordstrom, Inc.
+                                                    ©2025 Nordstrom, Inc.
                                                 </tspan>
                                             </text>
                                             <text

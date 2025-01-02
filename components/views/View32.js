@@ -259,14 +259,14 @@ const View32 = () => {
                                                         ></path>
                                                         <text
                                                             fill="#efefef"
-                                                            data-name="© 2024 Perfect. All rights reserved."
+                                                            data-name="© 2025 Perfect. All rights reserved."
                                                             fontFamily="Roboto-Light, Roboto"
                                                             fontSize="61"
                                                             fontWeight="300"
                                                             transform="translate(3597 3765)"
                                                         >
                                                             <tspan x="-462.832" y="0">
-                                                                © 2024 Perfect. All rights reserved.
+                                                                © 2025 Perfect. All rights reserved.
                                                             </tspan>
                                                         </text>
                                                         <text

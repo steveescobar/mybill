@@ -268,14 +268,14 @@ const View85 = () => {
                                             ></path>
                                             <text
                                                 fill="#efefef"
-                                                data-name="© 2024 luxurylivinggroup. All rights reserved."
+                                                data-name="© 2025 luxurylivinggroup. All rights reserved."
                                                 fontFamily="Roboto-Light, Roboto"
                                                 fontSize="61"
                                                 fontWeight="300"
                                                 transform="translate(1421 3819)"
                                             >
                                                 <tspan x="-593.663" y="0">
-                                                    © 2024 luxurylivinggroup. All rights reserved.
+                                                    © 2025 luxurylivinggroup. All rights reserved.
                                                 </tspan>
                                             </text>
                                             <text

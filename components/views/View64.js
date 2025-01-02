@@ -265,14 +265,14 @@ const View64 = () => {
                                             transform="translate(349 3651)"
                                         ></path>
                                         <text
-                                            data-name="Copyright@2024 Binamik Tecnologia all rights reserved"
+                                            data-name="Copyright@2025 Binamik Tecnologia all rights reserved"
                                             fontFamily="Roboto-Light, Roboto"
                                             fontSize="61"
                                             fontWeight="300"
                                             transform="translate(1188 3788)"
                                         >
                                             <tspan x="-734.74" y="0">
-                                                Copyright@2024 Binamik Tecnologia all rights reserved
+                                                Copyright@2025 Binamik Tecnologia all rights reserved
                                             </tspan>
                                         </text>
                                         <text

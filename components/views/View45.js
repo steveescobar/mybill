@@ -277,13 +277,13 @@ const View45 = () => {
                                     </text>
                                     <text
                                         fill="#dd1286"
-                                        data-name="© 2023,"
+                                        data-name="© 2025,"
                                         fontFamily="Roboto-Regular, Roboto"
                                         fontSize="65"
                                         transform="translate(2767 4095)"
                                     >
                                         <tspan x="-121.002" y="0">
-                                            © 2024,{" "}
+                                            © 2025,{" "}
                                         </tspan>
                                     </text>
                                     <text

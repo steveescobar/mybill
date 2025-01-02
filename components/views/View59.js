@@ -255,13 +255,13 @@ const View59 = () => {
                                         ></path>
                                         <text
                                             fill="#142e0b"
-                                            data-name="© 2024 Passporter. All rights reserved."
+                                            data-name="© 2025 Passporter. All rights reserved."
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="61"
                                             transform="translate(3609 3807)"
                                         >
                                             <tspan x="-522.208" y="0">
-                                                © 2024 Passporter. All rights reserved.
+                                                © 2025 Passporter. All rights reserved.
                                             </tspan>
                                         </text>
                                         <text

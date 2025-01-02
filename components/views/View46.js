@@ -866,7 +866,7 @@ const View46 = () => {
                     </tspan>
                   </text>
                   <text
-                    data-name="2018 - 2024 Contact Us Inquiry Bybit's 24*7"
+                    data-name="2018 - 2025 Contact Us Inquiry Bybit's 24*7"
                     fontFamily="Roboto-MediumItalic, Roboto"
                     fontSize="52"
                     fontStyle="italic"
@@ -875,7 +875,7 @@ const View46 = () => {
                   >
                     <tspan x="0" y="0">
                       {" "}
-                      2018 - 2024 Contact Us Inquiry Bybit&apos;s 24*7
+                      2018 - 2025 Contact Us Inquiry Bybit&apos;s 24*7
                     </tspan>
                   </text>
                 </g>
