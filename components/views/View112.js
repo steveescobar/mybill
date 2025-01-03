@@ -358,7 +358,7 @@ const View107 = () => {
                                                 fill="#0077c5"
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(900 634)"
                                             >
@@ -372,7 +372,7 @@ const View107 = () => {
                                                 data-name="PAY BILL"
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(1027 634)"
                                             >
@@ -386,7 +386,7 @@ const View107 = () => {
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
                                                  fontStyle="italic"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(1157 634)"
                                             >
@@ -399,7 +399,7 @@ const View107 = () => {
                                                 fill="#0077c5"
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(1135 669)"
                                             >
@@ -412,7 +412,7 @@ const View107 = () => {
                                                 fill="#0077c5"
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(1283 634)"
                                             >
@@ -533,6 +533,7 @@ const View107 = () => {
                                                 fontFamily="Heebo-Regular, Heebo"
                                                 fontSize="18"
                                                 letterSpacing="-.004em"
+                                                fontWeight="600"
                                                 transform="translate(879 1483.073)"
                                             >
                                                 <tspan x="0" y="0">
@@ -717,10 +718,10 @@ const View107 = () => {
                                                 stroke="#16629c"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                strokeWidth="3"
+                                                strokeWidth="4"
                                                 d="m3460.308 1056.817-9.639 11.73 9.639 11.265"
                                                 data-name="Path 28"
-                                                transform="rotate(180 2418.355 1037.389)"
+                                                transform="rotate(180 2418.355 1047.389)"
                                             ></path>
                                             <path
                                                 id="Path_31"
@@ -728,10 +729,10 @@ const View107 = () => {
                                                 stroke="#16629c"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                strokeWidth="3"
+                                                strokeWidth="4"
                                                 d="m3460.308 1056.817-9.639 11.73 9.639 11.265"
                                                 data-name="Path 31"
-                                                transform="rotate(180 2417.913 1089.385)"
+                                                transform="rotate(180 2417.913 1099.385)"
                                             ></path>
                                             <path
                                                 id="Path_32"
@@ -739,10 +740,10 @@ const View107 = () => {
                                                 stroke="#16629c"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                strokeWidth="3"
+                                                strokeWidth="4"
                                                 d="m3460.308 1056.817-9.639 11.73 9.639 11.265"
                                                 data-name="Path 32"
-                                                transform="rotate(180 2417.471 1141.381)"
+                                                transform="rotate(180 2417.471 1151.381)"
                                             ></path>
                                             <path
                                                 id="Path_33"
@@ -753,7 +754,7 @@ const View107 = () => {
                                                 strokeWidth="3"
                                                 d="m3460.308 1056.817-9.639 11.73 9.639 11.265"
                                                 data-name="Path 33"
-                                                transform="rotate(180 2417.471 1141.381)"
+                                                transform="rotate(180 2417.471 1151.381)"
                                             ></path>
                                             <path
                                                 id="Path_34"
@@ -761,10 +762,10 @@ const View107 = () => {
                                                 stroke="#16629c"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                strokeWidth="3"
+                                                strokeWidth="4"
                                                 d="m3460.308 1056.817-9.639 11.73 9.639 11.265"
                                                 data-name="Path 34"
-                                                transform="rotate(180 2416.8 1220.375)"
+                                                transform="rotate(180 2416.8 1230.375)"
                                             ></path>
                                             <text
                                                 id="JAN_02_2025"
@@ -1033,7 +1034,7 @@ const View107 = () => {
                                                 fill="#0077c5"
                                                 fontFamily="Heebo-Medium, Heebo"
                                                 fontSize="20"
-                                                fontWeight="500"
+                                                fontWeight="600"
                                                 letterSpacing=".033em"
                                                 transform="translate(893 893)"
                                             >
