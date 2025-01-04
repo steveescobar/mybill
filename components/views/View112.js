@@ -10,11 +10,11 @@ import Image from "next/image";
 import Page93Icons from "../options/Page93Icons";
 import { heeboEncoded } from "@/utils/encodedFonts/HeeboEncoded";
 
-const View107 = () => {
+const View112 = () => {
 
     const screenshotRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
-    const pageName = "VIEW 107";
+    const pageName = "VIEW 112";
 
     const [data, setData] = useState({
 
@@ -1268,4 +1268,4 @@ const View107 = () => {
     )
 }
 
-export default View107
+export default View112
