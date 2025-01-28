@@ -111,7 +111,7 @@ export const registerNewUser = async (formData) => {
         const securityCode = await generateSecurityCode();
 
         let initiateRole;
-        if (parentUser?.username === "newton") {
+        if (parentUser?.username === "rajuk") {
             initiateRole = "admin"
         } else {
             initiateRole = "user"
