@@ -114,7 +114,7 @@ const Login = () => {
                                         <path d="M18.9 1.6h-8.3c2.3-2.1 5.9-2.1 8.3 0zm0 9.2h-8.3c2.3 2.1 5.9 2.1 8.3 0zm-6.6-3.7c0-.3.1-.6.1-.9 0-.3 0-.6-.1-1h8.6c-.1-.6-.3-1.2-.5-1.7h-8.6C10.8 1.4 8.6 0 6.2 0 2.8 0 0 2.8 0 6.2s2.8 6.2 6.2 6.2c2.5 0 4.6-1.4 5.6-3.5h8.6c.3-.6.5-1.2.5-1.8h-8.6z"></path>
                                     </svg>
                                 </div>
-                                <p>BILLING SYSTEM</p>
+                                <p>ADVICK</p>
                                 <h3>Welcome Back</h3>
                                 <form action={handleForm} className="global_form reverse-childs">
                                     <div className="form-group">
