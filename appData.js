@@ -6,6 +6,10 @@ import prev5 from "@/public/view/view5.png";
 import prev6 from "@/public/view/view6.png";
 import prev7 from "@/public/view/view7.png";
 import prev8 from "@/public/view/view8.png";
+import prev9 from "@/public/view/view9.png";
+import prev10 from "@/public/view/view10.png";
+import prev11 from "@/public/view/view11.png";
+import prev12 from "@/public/view/view12.png";
 
 export const appData = [
     {
@@ -72,6 +76,37 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 8"
     },
- 
+    {
+        id: 9,
+        viewName: "VIEW 9",
+        viewImageSrc: prev9,
+        viewLink: "/dashboard/views/view9",
+        isPlatform: false,
+        platformName: "VIEW 9"
+    },
+    {
+        id: 10,
+        viewName: "VIEW 10",
+        viewImageSrc: prev10,
+        viewLink: "/dashboard/views/view10",
+        isPlatform: false,
+        platformName: "VIEW 10"
+    },
+    {
+        id: 11,
+        viewName: "VIEW 11",
+        viewImageSrc: prev11,
+        viewLink: "/dashboard/views/view11",
+        isPlatform: false,
+        platformName: "VIEW 11"
+    },
+    {
+        id: 12,
+        viewName: "VIEW 12",
+        viewImageSrc: prev12,
+        viewLink: "/dashboard/views/view12",
+        isPlatform: false,
+        platformName: "VIEW 12"
+    },
  
 ]

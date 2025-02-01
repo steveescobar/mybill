@@ -452,7 +452,7 @@ const View1 = () => {
                 name="id"
                 onChange={(e) => onChangeHandler(e)}
               />
-            </div>
+            </div> 
 
           </div>
         </div>
