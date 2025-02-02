@@ -25,6 +25,7 @@ const View2 = () => {
         fromAccountAmount1: "(066-162 1090 6500)",
         description: "Varinder singh",
         transfer_date: "17 Dec 2024 10: 14 PM",
+        best: "Bestfriend",
 
     });
 
@@ -459,7 +460,7 @@ const View2 = () => {
                                                 transform="translate(278 718)"
                                             >
                                                 <tspan x="0" y="0">
-                                                    Add to Siri so you can ask to pay Bestfriends
+                                                    Add to Siri so you can ask to pay {data.best}
                                                 </tspan>
                                             </text>
                                             <text
@@ -661,6 +662,15 @@ const View2 = () => {
                                 type="text"
                                 value={data.transfer_date}
                                 name="transfer_date"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="global_form_inner">
+                            <label>Bestfriend</label>
+                            <input
+                                type="text"
+                                value={data.best}
+                                name="best"
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
