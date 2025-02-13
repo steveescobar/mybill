@@ -13,6 +13,7 @@ import prev12 from "@/public/view/view12.png";
 import prev13 from "@/public/view/view13.png";
 import prev14 from "@/public/view/view14.png";
 import prev15 from "@/public/view/view15.png";
+import prev16 from "@/public/view/view16.png";
 
 export const appData = [
     {
@@ -135,5 +136,14 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 15"
     },
+    {
+        id: 16,
+        viewName: "VIEW 16",
+        viewImageSrc: prev16,
+        viewLink: "/dashboard/views/view16",
+        isPlatform: false,
+        platformName: "VIEW 16"
+    },
+ 
  
 ]
