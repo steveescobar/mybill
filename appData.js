@@ -14,6 +14,9 @@ import prev13 from "@/public/view/view13.png";
 import prev14 from "@/public/view/view14.png";
 import prev15 from "@/public/view/view15.png";
 import prev16 from "@/public/view/view16.png";
+import prev17 from "@/public/view/view17.png";
+import prev18 from "@/public/view/view18.png";
+import prev19 from "@/public/view/view19.png";
 
 export const appData = [
     {
@@ -143,6 +146,30 @@ export const appData = [
         viewLink: "/dashboard/views/view16",
         isPlatform: false,
         platformName: "VIEW 16"
+    },
+    {
+        id: 17,
+        viewName: "VIEW 17",
+        viewImageSrc: prev17,
+        viewLink: "/dashboard/views/view17",
+        isPlatform: false,
+        platformName: "VIEW 17"
+    },
+    {
+        id: 18,
+        viewName: "VIEW 18",
+        viewImageSrc: prev18,
+        viewLink: "/dashboard/views/view18",
+        isPlatform: false,
+        platformName: "VIEW 18"
+    },
+    {
+        id: 19,
+        viewName: "VIEW 19",
+        viewImageSrc: prev19,
+        viewLink: "/dashboard/views/view19",
+        isPlatform: false,
+        platformName: "VIEW 19"
     },
  
  
