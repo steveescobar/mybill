@@ -19,11 +19,11 @@ const View20 = () => {
     const [data, setData] = useState({
         amount: " AUD$ 3,000",
         name: "RH",
-        fullname:"RICH HEEREN",
-        date:"Today, 13:51.",
-        bank:"Transfer via Osko",
-        fullname1:"Rick Heeren",
-        amount1:"AU$ +3,000"
+        fullname: "RICH HEEREN",
+        date: "Today, 13:51.",
+        bank: "Transfer via Osko",
+        fullname1: "Rick Heeren",
+        amount1: "AU$ +3,000"
     });
 
     const onChangeHandler = (e) => {
@@ -467,7 +467,7 @@ const View20 = () => {
                                                             transform="translate(718 829)"
                                                         >
                                                             <tspan x="0" y="0">
-                                                               {data.date}
+                                                                {data.date}
                                                             </tspan>
                                                         </text>
                                                     </g>
@@ -482,7 +482,7 @@ const View20 = () => {
                                                             transform="translate(719 816)"
                                                         >
                                                             <tspan x="0" y="0">
-                                                               {data.bank}
+                                                                {data.bank}
                                                             </tspan>
                                                         </text>
                                                     </g>
@@ -525,7 +525,7 @@ const View20 = () => {
                                                     transform="translate(719 806)"
                                                 >
                                                     <tspan x="0" y="0">
-                                                       {data.fullname}
+                                                        {data.fullname}
                                                     </tspan>
                                                 </text>
                                             </g>
@@ -538,15 +538,24 @@ const View20 = () => {
                                                 data-name="Rectangle 86"
                                                 transform="translate(751 941)"
                                             ></path>
-                                            <rect
-                                                id="Rectangle_85"
-                                                width="138"
-                                                height="4"
-                                                fill="#fff"
-                                                data-name="Rectangle 85"
-                                                rx="2"
-                                                transform="translate(756 945)"
-                                            ></rect>
+
+                                            {
+                                                isIOS
+                                                    ?
+                                                    <>
+                                                        <rect
+                                                            id="Rectangle_85"
+                                                            width="138"
+                                                            height="4"
+                                                            fill="#fff"
+                                                            data-name="Rectangle 85"
+                                                            rx="2"
+                                                            transform="translate(756 945)"
+                                                        ></rect>
+                                                    </>
+                                                    :
+                                                    <></>
+                                            }
                                         </g>
                                     </g>
                                 </g>
