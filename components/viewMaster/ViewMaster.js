@@ -22,6 +22,7 @@ import View17 from '../views/View17';
 import View18 from '../views/View18';
 import View19 from '../views/View19';
 import View20 from '../views/View20';
+import View21 from '../views/View21';
 
 
 
@@ -35,26 +36,27 @@ const ViewMaster = () => {
 
     return (
         <>
-            {pageName === "1" && <View1 />},
-            {pageName === "2" && <View2 />},
-            {pageName === "3" && <View3 />},
-            {pageName === "4" && <View4 />},
-            {pageName === "5" && <View5 />},
-            {pageName === "6" && <View6 />},
-            {pageName === "7" && <View7 />},
-            {pageName === "8" && <View8 />},
-            {pageName === "9" && <View9 />},
-            {pageName === "10" && <View10 />},
-            {pageName === "11" && <View11 />},
-            {pageName === "12" && <View12 />},
-            {pageName === "13" && <View13 />},
-            {pageName === "14" && <View14 />},
-            {pageName === "15" && <View15 />},
-            {pageName === "16" && <View16 />},
-            {pageName === "17" && <View17/>},
-            {pageName === "18" && <View18 />},
-            {pageName === "19" && <View19 />},
-            {pageName === "20" && <View20 />},
+            {pageName === "1" && <View1 />}
+            {pageName === "2" && <View2 />}
+            {pageName === "3" && <View3 />}
+            {pageName === "4" && <View4 />}
+            {pageName === "5" && <View5 />}
+            {pageName === "6" && <View6 />}
+            {pageName === "7" && <View7 />}
+            {pageName === "8" && <View8 />}
+            {pageName === "9" && <View9 />}
+            {pageName === "10" && <View10 />}
+            {pageName === "11" && <View11 />}
+            {pageName === "12" && <View12 />}
+            {pageName === "13" && <View13 />}
+            {pageName === "14" && <View14 />}
+            {pageName === "15" && <View15 />}
+            {pageName === "16" && <View16 />}
+            {pageName === "17" && <View17/>}
+            {pageName === "18" && <View18 />}
+            {pageName === "19" && <View19 />}
+            {pageName === "20" && <View20 />}
+            {pageName === "21" && <View21 />}
 
         </>
     )
