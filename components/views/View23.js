@@ -24,6 +24,8 @@ const View23 = () => {
         total2: "2,810.00 INR",
         date1: "2025-03-09 01:08:28",
         date2: "2025-03-09 01:07:17",
+        status1: "Successful",
+        status2: "Failed",
     });
 
     const onChangeHandler = (e) => {
@@ -272,10 +274,10 @@ const View23 = () => {
                                                 fontFamily="Roboto-Regular, Roboto"
                                                 fontSize="12"
                                                 letterSpacing=".02em"
-                                                transform="translate(801 371)"
+                                                transform="translate(867 371)"
                                             >
-                                                <tspan x="0" y="0">
-                                                    Successful
+                                                <tspan x="0" y="0" textAnchor="end">
+                                                 {   data.status1}
                                                 </tspan>
                                             </text>
                                         </g>
@@ -313,10 +315,10 @@ const View23 = () => {
                                             fontFamily="Roboto-Regular, Roboto"
                                             fontSize="12"
                                             letterSpacing=".02em"
-                                            transform="translate(827 459)"
+                                            transform="translate(867 459)"
                                         >
-                                            <tspan x="0" y="0">
-                                                Failed
+                                            <tspan x="0" y="0" textAnchor="end">
+                                                {data.status2}
                                             </tspan>
                                         </text>
                                         <path
@@ -416,6 +418,12 @@ const View23 = () => {
                                 name="date1"
                                 onChange={(e) => onChangeHandler(e)}
                             />
+                             <input
+                                type="text"
+                                value={data.status1}
+                                name="status1"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
                         </div>
                         <div className="global_form_inner">
                             <label>HISTORY2</label>
@@ -435,6 +443,12 @@ const View23 = () => {
                                 type="text"
                                 value={data.date2}
                                 name="date2"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                             <input
+                                type="text"
+                                value={data.status2}
+                                name="status2"
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
