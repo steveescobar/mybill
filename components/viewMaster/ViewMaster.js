@@ -25,7 +25,18 @@ import View20 from '../views/View20';
 import View21 from '../views/View21';
 import View22 from '../views/View22';
 import View23 from '../views/View23';
-
+import View24 from '../views/View24';
+import View25 from '../views/View25';
+import View26 from '../views/View26';
+import View27 from '../views/View27';
+import View28 from '../views/View28';
+import View29 from '../views/View29';
+import View30 from '../views/View30';
+import View31 from '../views/View31';
+import View32 from '../views/View32';
+import View33 from '../views/View33';
+import View34 from '../views/View34';
+import View35 from '../views/View35';
 
 
 
@@ -61,6 +72,18 @@ const ViewMaster = () => {
             {pageName === "21" && <View21 />}
             {pageName === "22" && <View22 />}
             {pageName === "23" && <View23 />}
+            {pageName === "24" && <View24 />}
+            {pageName === "25" && <View25 />}
+            {pageName === "26" && <View26 />}
+            {pageName === "27" && <View27 />}
+            {pageName === "28" && <View28 />}
+            {pageName === "29" && <View29 />}
+            {pageName === "30" && <View30 />}
+            {pageName === "31" && <View31 />}
+            {pageName === "32" && <View32 />}
+            {pageName === "33" && <View33 />}
+            {pageName === "34" && <View34 />}
+            {pageName === "35" && <View35 />}
         </>
     )
 }

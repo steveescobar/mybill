@@ -21,6 +21,18 @@ import prev20 from "@/public/view/view20.png";
 import prev21 from "@/public/view/view21.png";
 import prev22 from "@/public/view/view22.png";
 import prev23 from "@/public/view/view23.png";
+import prev24 from "@/public/view/view24.png";
+import prev25 from "@/public/view/view25.png";
+import prev26 from "@/public/view/view26.png";
+import prev27 from "@/public/view/view27.png";
+import prev28 from "@/public/view/view28.png";
+import prev29 from "@/public/view/view29.png";
+import prev30 from "@/public/view/view30.png";
+import prev31 from "@/public/view/view31.png";
+import prev32 from "@/public/view/view32.png";
+import prev33 from "@/public/view/view33.png";
+import prev34 from "@/public/view/view34.png";
+import prev35 from "@/public/view/view35.png";
 export const appData = [
     {
         id: 1,
@@ -206,6 +218,103 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 23"
     },
+    {
+        id: 24,
+        viewName: "VIEW 24",
+        viewImageSrc: prev24,
+        viewLink: "/dashboard/views/view24",
+        isPlatform: false,
+        platformName: "VIEW 24"
+    },
+    {
+        id: 25,
+        viewName: "VIEW 25",
+        viewImageSrc: prev25,
+        viewLink: "/dashboard/views/view25",
+        isPlatform: false,
+        platformName: "VIEW 25"
+    },
+    {
+        id: 26,
+        viewName: "VIEW 26",
+        viewImageSrc: prev26,
+        viewLink: "/dashboard/views/view26",
+        isPlatform: false,
+        platformName: "VIEW 26"
+    },
+    {
+        id: 27,
+        viewName: "VIEW 27",
+        viewImageSrc: prev27,
+        viewLink: "/dashboard/views/view27",
+        isPlatform: false,
+        platformName: "VIEW 27"
+    },
+    {
+        id: 28,
+        viewName: "VIEW 28",
+        viewImageSrc: prev28,
+        viewLink: "/dashboard/views/view28",
+        isPlatform: false,
+        platformName: "VIEW 28"
+    },
+    {
+        id: 29,
+        viewName: "VIEW 29",
+        viewImageSrc: prev29,
+        viewLink: "/dashboard/views/view29",
+        isPlatform: false,
+        platformName: "VIEW 29"
+    },
+    {
+        id: 30,
+        viewName: "VIEW 30",
+        viewImageSrc: prev30,
+        viewLink: "/dashboard/views/view30",
+        isPlatform: false,
+        platformName: "VIEW 30"
+    },
+    {
+        id: 31,
+        viewName: "VIEW 31",
+        viewImageSrc: prev31,
+        viewLink: "/dashboard/views/view31",
+        isPlatform: false,
+        platformName: "VIEW 31"
+    },
+    {
+        id: 32,
+        viewName: "VIEW 32",
+        viewImageSrc: prev32,
+        viewLink: "/dashboard/views/view32",
+        isPlatform: false,
+        platformName: "VIEW 32"
+    },
+    {
+        id: 33,
+        viewName: "VIEW 33",
+        viewImageSrc: prev33,
+        viewLink: "/dashboard/views/view33",
+        isPlatform: false,
+        platformName: "VIEW 33"
+    },
+    {
+        id: 34,
+        viewName: "VIEW 34",
+        viewImageSrc: prev34,
+        viewLink: "/dashboard/views/view34",
+        isPlatform: false,
+        platformName: "VIEW 34"
+    },
+    {
+        id: 35,
+        viewName: "VIEW 35",
+        viewImageSrc: prev35,
+        viewLink: "/dashboard/views/view35",
+        isPlatform: false,
+        platformName: "VIEW 35"
+    },
+ 
  
  
  
