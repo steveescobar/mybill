@@ -33,6 +33,7 @@ import prev32 from "@/public/view/view32.png";
 import prev33 from "@/public/view/view33.png";
 import prev34 from "@/public/view/view34.png";
 import prev35 from "@/public/view/view35.png";
+import prev36 from "@/public/view/view36.png";
 export const appData = [
     {
         id: 1,
@@ -313,6 +314,14 @@ export const appData = [
         viewLink: "/dashboard/views/view35",
         isPlatform: false,
         platformName: "VIEW 35"
+    },
+    {
+        id: 36,
+        viewName: "VIEW 36",
+        viewImageSrc: prev36,
+        viewLink: "/dashboard/views/view36",
+        isPlatform: false,
+        platformName: "VIEW 36"
     },
  
  
