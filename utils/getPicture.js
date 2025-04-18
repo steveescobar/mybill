@@ -7,75 +7,95 @@ const getPicture = async (
     screenshotRef,
     setIsLoading,
     toast,
-    marginTopPercent,
-    marginRightPercent,
-    marginBottomPercent,
-    marginLeftPercent,
+    marginTopPercent = 0,
+    marginRightPercent = 0,
+    marginBottomPercent = 0,
+    marginLeftPercent = 0
 ) => {
     setIsLoading(true);
+
     try {
-        const canvas = await html2canvas(screenshotRef.current, {
-            scale: window.devicePixelRatio,
+        const element = screenshotRef.current;
+        if (!element) {
+            toast.error("Element not found.");
+            setIsLoading(false);
+            return;
+        }
+
+        await new Promise(res => setTimeout(res, 150)); // Let layout settle
+
+        const scale = 6; // Ultra high-res
+        const canvas = await html2canvas(element, {
+            scale,
             useCORS: true,
-            allowTaint: true,
-            letterRendering: true,
-            onrendered: function (canvas) {
-                var ctx = canvas.getContext('2d');
-                ctx.webkitImageSmoothingEnabled = false;
-                ctx.mozImageSmoothingEnabled = false;
-                ctx.imageSmoothingEnabled = false;
-            },
+            backgroundColor: null,
+            scrollX: -window.scrollX,
+            scrollY: -window.scrollY,
+            windowWidth: element.scrollWidth,
+            windowHeight: element.scrollHeight
         });
 
         const canvasWidth = canvas.width;
         const canvasHeight = canvas.height;
 
-        // Define the clipping margins for each side
         const marginTop = (marginTopPercent / 100) * canvasHeight;
         const marginRight = (marginRightPercent / 100) * canvasWidth;
         const marginBottom = (marginBottomPercent / 100) * canvasHeight;
         const marginLeft = (marginLeftPercent / 100) * canvasWidth;
 
-        const croppedWidth = canvas.width - marginLeft - marginRight;
-        const croppedHeight = canvas.height - marginTop - marginBottom;
+        const croppedWidth = canvasWidth - marginLeft - marginRight;
+        const croppedHeight = canvasHeight - marginTop - marginBottom;
 
-        const dataURL = canvas.toDataURL('image/png');
-        const img = new Image();
-        img.src = dataURL;
+        const croppedCanvas = document.createElement('canvas');
+        croppedCanvas.width = croppedWidth;
+        croppedCanvas.height = croppedHeight;
 
-        img.onload = () => {
-            const croppedCanvas = document.createElement("canvas");
-            croppedCanvas.width = croppedWidth;
-            croppedCanvas.height = croppedHeight;
+        const ctx = croppedCanvas.getContext('2d', { alpha: true });
+        ctx.imageSmoothingEnabled = false;
+        ctx.webkitImageSmoothingEnabled = false;
+        ctx.mozImageSmoothingEnabled = false;
 
-            const context = croppedCanvas.getContext("2d");
+        ctx.drawImage(
+            canvas,
+            marginLeft, marginTop, croppedWidth, croppedHeight,
+            0, 0, croppedWidth, croppedHeight
+        );
 
-            // Draw the cropped area of the image
-            context.drawImage(
-                img,
-                marginLeft, marginTop, croppedWidth, croppedHeight, // Source rectangle
-                0, 0, croppedWidth, croppedHeight // Destination rectangle
-            );
+        // Convert to PNG blob
+        croppedCanvas.toBlob((blob) => {
+            if (!blob) {
+                toast.error("Image conversion failed.");
+                setIsLoading(false);
+                return;
+            }
 
-            croppedCanvas.toBlob((blob) => {
-                const clipboardItem = new ClipboardItem({ [blob.type]: blob });
-                write([clipboardItem]).then(() => {
+            // Copy to clipboard
+            const clipboardItem = new ClipboardItem({ [blob.type]: blob });
+            write([clipboardItem])
+                .then(() => {
+                    // Download image as well
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = "screenshot.png";
+                    a.click();
+                    URL.revokeObjectURL(url);
 
-                    toast.success("Copied successfully");
-                    setIsLoading(false);
                     setPreview(croppedCanvas.toDataURL('image/png'));
                     setIsPreview(true);
-
-                }).catch((error) => {
-                    toast.error("Something went wrong. Please try again!");
+                    toast.success("📋 Copied + ⬇️ Downloaded successfully");
                     setIsLoading(false);
-                    setIsPreview(false);
-                    console.error("Error copying image:", error);
+                })
+                .catch((error) => {
+                    console.error("Clipboard error:", error);
+                    toast.error("Failed to copy image.");
+                    setIsLoading(false);
                 });
-            }, img.type);
-        };
+        }, 'image/png');
+
     } catch (error) {
-        console.error('Error taking screenshot:', error);
+        console.error("Screenshot error:", error);
+        toast.error("Something went wrong.");
         setIsLoading(false);
     }
 };
