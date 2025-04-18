@@ -37,6 +37,9 @@ import prev36 from "@/public/view/view36.png";
 import prev37 from "@/public/view/view37.png";
 import prev38 from "@/public/view/view38.png";
 import prev39 from "@/public/view/view39.png";
+import prev40 from "@/public/view/View40.png";
+import prev41 from "@/public/view/view41.png";
+import prev42 from "@/public/view/view42.png";
 export const appData = [
     {
         id: 1,
@@ -350,7 +353,32 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 39"
     },
+    {
+        id: 40,
+        viewName: "VIEW 40",
+        viewImageSrc: prev40,
+        viewLink: "/dashboard/views/view340",
+        isPlatform: false,
+        platformName: "VIEW 40"
+    },
+    {
+        id: 41,
+        viewName: "VIEW 41",
+        viewImageSrc: prev41,
+        viewLink: "/dashboard/views/view41",
+        isPlatform: false,
+        platformName: "VIEW 41"
+    },
+    {
+        id: 42,
+        viewName: "VIEW 42",
+        viewImageSrc: prev42,
+        viewLink: "/dashboard/views/view42",
+        isPlatform: false,
+        platformName: "VIEW 42"
+    }
  
+
  
  
  
