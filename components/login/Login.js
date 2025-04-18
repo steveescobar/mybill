@@ -57,7 +57,7 @@ const Login = () => {
                     localStorage.setItem("securityCode", user?.user?.securityCode);
     
                     toast.success("Logged in successfully");
-                    push("/dashboard/views/view1?pageName=1");
+                    push("/dashboard");
                     setIsloading(false);
                     return;
                 } else if (response.status !== "201") {
