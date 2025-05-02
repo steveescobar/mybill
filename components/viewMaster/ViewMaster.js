@@ -44,6 +44,12 @@ import View39 from '../views/View39';
 import View40 from '../views/View40';
 import View41 from '../views/View41';
 import View42 from '../views/View42';
+import View43 from '../views/View43';
+import View44 from '../views/View44';
+import View45 from '../views/View45';
+import View46 from '../views/View46';
+import View47 from '../views/View47';
+import View48 from '../views/View48';
 
 
 
@@ -98,6 +104,12 @@ const ViewMaster = () => {
             {pageName === "40" && <View40 />}
             {pageName === "41" && <View41 />}
             {pageName === "42" && <View42 />}
+            {pageName === "43" && <View43 />}
+            {pageName === "44" && <View44 />}
+            {pageName === "45" && <View45 />}
+            {pageName === "46" && <View46 />}
+            {pageName === "47" && <View47 />}
+            {pageName === "48" && <View48 />}
         </>
     )
 }

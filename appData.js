@@ -40,6 +40,12 @@ import prev39 from "@/public/view/view39.png";
 import prev40 from "@/public/view/View40.png";
 import prev41 from "@/public/view/view41.png";
 import prev42 from "@/public/view/view42.png";
+import prev43 from "@/public/view/view43.png";
+import prev44 from "@/public/view/view44.png";
+import prev45 from "@/public/view/view45.png";
+import prev46 from "@/public/view/view46.png";
+import prev47 from "@/public/view/view47.png";
+import prev48 from "@/public/view/view48.png";
 export const appData = [
     {
         id: 1,
@@ -376,7 +382,55 @@ export const appData = [
         viewLink: "/dashboard/views/view42",
         isPlatform: false,
         platformName: "VIEW 42"
-    }
+    },
+    {
+        id: 43,
+        viewName: "VIEW 43",
+        viewImageSrc: prev43,
+        viewLink: "/dashboard/views/view43",
+        isPlatform: false,
+        platformName: "VIEW 43"
+    },
+    {
+        id: 44,
+        viewName: "VIEW 44",
+        viewImageSrc: prev44,
+        viewLink: "/dashboard/views/view44",
+        isPlatform: false,
+        platformName: "VIEW 44"
+    },
+    {
+        id: 45,
+        viewName: "VIEW 45",
+        viewImageSrc: prev45,
+        viewLink: "/dashboard/views/view45",
+        isPlatform: false,
+        platformName: "VIEW 45"
+    },
+    {
+        id: 46,
+        viewName: "VIEW 46",
+        viewImageSrc: prev46,
+        viewLink: "/dashboard/views/view46",
+        isPlatform: false,
+        platformName: "VIEW 46"
+    },
+    {
+        id: 47,
+        viewName: "VIEW 47",
+        viewImageSrc: prev47,
+        viewLink: "/dashboard/views/view47",
+        isPlatform: false,
+        platformName: "VIEW 47"
+    },
+    {
+        id: 48,
+        viewName: "VIEW 48",
+        viewImageSrc: prev48,
+        viewLink: "/dashboard/views/view48",
+        isPlatform: false,
+        platformName: "VIEW 48"
+    },
  
 
  
