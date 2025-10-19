@@ -46,6 +46,8 @@ import prev45 from "@/public/view/view45.png";
 import prev46 from "@/public/view/view46.png";
 import prev47 from "@/public/view/view47.png";
 import prev48 from "@/public/view/view48.png";
+import prev49 from "@/public/view/view49.png";
+import prev50 from "@/public/view/view50.png";
 export const appData = [
     {
         id: 1,
@@ -431,7 +433,22 @@ export const appData = [
         isPlatform: false,
         platformName: "VIEW 48"
     },
- 
+ {
+        id: 49,
+        viewName: "VIEW 49",
+        viewImageSrc: prev49,
+        viewLink: "/dashboard/views/view49",
+        isPlatform: false,
+        platformName: "VIEW 49"
+    },
+    {
+        id: 50,
+        viewName: "VIEW 50",
+        viewImageSrc: prev50,
+        viewLink: "/dashboard/views/view50",
+        isPlatform: false,
+        platformName: "VIEW 50"
+    },
 
  
  
