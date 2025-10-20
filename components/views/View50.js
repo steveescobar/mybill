@@ -21,6 +21,8 @@ const View50 = () => {
         device: "ios",
         email: "ros***@****",
         number: "44****054",
+        not: "Not Setup",
+
 
 
     });
@@ -205,10 +207,10 @@ const View50 = () => {
                                             fontSize="15.3"
                                             fontWeight="500"
                                             letterSpacing=".055em"
-                                            transform="translate(373 771)"
+                                            transform="translate(453 771)"
                                         >
-                                            <tspan x="0" y="0">
-                                                Not Setup
+                                            <tspan x="0" y="0" textAnchor="end">
+                                                {data.not}
                                             </tspan>
                                         </text>
                                         <text
@@ -442,7 +444,15 @@ const View50 = () => {
                                 onChange={(e) => onChangeHandler(e)}
                             />
                         </div>
-
+                                    <div className="global_form_inner">
+                            <label>Fund password</label>
+                            <input
+                                type="text"
+                                value={data.not}
+                                name="not"
+                                onChange={(e) => onChangeHandler(e)}
+                            />
+                        </div>
                     </div>
                 </div>
 
